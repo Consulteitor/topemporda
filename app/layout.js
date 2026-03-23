@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
           </div>
         </footer>
         {/* GA4 id: pendent configurar a Google Analytics. Substituir XXXXXXXXXX pel nou id */}
-        <CookieBanner gaId="G-XXXXXXXXXX" />
+        <CookieBanner gaId="G-Z5CMSYG9V4" />
       </body>
     </html>
   )
