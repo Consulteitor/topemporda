@@ -3,7 +3,7 @@ import { getNegocis, getNoticies, getGuies } from '../lib/sheets';
 
 const C = {
   black: '#0a0a0a', white: '#faf9f6', warmGray: '#e8e4dc',
-  midGray: '#9a9489', accent: '#c8423a',
+  midGray: '#9a9489', accent: '#1a5c8a',
   serif: "'Playfair Display', Georgia, serif",
   body: "'Source Serif 4', Georgia, serif",
   sans: "'IBM Plex Sans', Helvetica, sans-serif",
@@ -11,23 +11,24 @@ const C = {
 
 const CAT_COLORS = {
   'Salut': '#2d6a4f', 'Mobilitat': '#1d3557', 'Economia': '#6b4226',
-  'Patrimoni': '#5c4a1e', 'Joves': '#7b2d8b', 'Esports': '#c8423a',
+  'Patrimoni': '#5c4a1e', 'Joves': '#7b2d8b', 'Esports': '#1a5c8a',
   'Cultura': '#2c3e50', 'Natura': '#2d6a4f', 'Territori': '#8b4513',
 };
 
 const AGENDA = [
-  { dia: '08', mes: 'Mar', cat: 'Mercat', titol: 'Mercat de productors locals', lloc: 'Plaça Ajuntament, Puigcerdà · 9:00–14:00' },
-  { dia: '09', mes: 'Mar', cat: 'Cultura', titol: 'Concert de la Cobla Pirineu', lloc: 'Teatre de Puigcerdà · 19:30' },
-  { dia: '15', mes: 'Mar', cat: 'Esports', titol: 'Volta a la Cerdanya 2026', lloc: 'Sortida des de Bellver de Cerdanya' },
-  { dia: '22', mes: 'Mar', cat: 'Gastronomia', titol: 'Jornades de cuina de muntanya', lloc: 'Museu Cerdà, Puigcerdà · 11:00–20:00' },
-  { dia: '29', mes: 'Mar', cat: 'Natura', titol: 'Ruta nocturna d\'astronomia al Cadí', lloc: 'Refugi de Prat d\'Aguiló · 21:00' },
+  { dia: '29', mes: 'Mar', cat: 'Tradicional', titol: 'Processó del Diumenge de Rams', lloc: 'Figueres · 18:00' },
+  { dia: '03', mes: 'Abr', cat: 'Gastronomia', titol: 'Mercat de Pasqua de Cadaqués', lloc: 'Plaça Frederic Rahola · 10:00–14:00' },
+  { dia: '05', mes: 'Abr', cat: 'Natura', titol: 'Ruta del Camí de Ronda: Cap de Creus', lloc: 'Sortida des de Cadaqués · 9:00' },
+  { dia: '12', mes: 'Abr', cat: 'Cultura', titol: 'Fira de Sant Jordi a Figueres', lloc: 'Rambla de Figueres · tot el dia' },
+  { dia: '26', mes: 'Abr', cat: 'Mercat', titol: 'Mercat setmanal de Figueres', lloc: 'Plaça del Gra · dijous i diumenge' },
 ];
 
 const POBLES = [
-  { label: 'Puigcerdà', sub: 'La capital', href: '/pobles/puigcerda' },
-  { label: 'Bellver', sub: 'Nucli medieval', href: '/pobles/bellver-de-cerdanya' },
-  { label: 'Llívia', sub: 'L\'enclavament', href: '/pobles/llivia' },
-  { label: 'Alp', sub: 'Les pistes', href: '/pobles/alp' },
+  { label: 'Figueres', sub: 'La capital', href: '/pobles/figueres' },
+  { label: 'Cadaqués', sub: 'La joia de la Costa', href: '/pobles/cadaques' },
+  { label: 'Begur', sub: 'Cales i castells', href: '/pobles/begur' },
+  { label: 'Peratallada', sub: 'Poble medieval', href: '/pobles/peratallada' },
+  { label: 'Roses', sub: 'La badia', href: '/pobles/roses' },
 ];
 
 // Assigna guies als slots de la home per posicio_home
@@ -42,7 +43,6 @@ function assignarSlots(guies) {
       resta.push(g);
     }
   }
-  // Fallbacks: si algun slot buit, omple amb les primeres amb imatge
   const ambImatge = resta.filter(g => g.imatge);
   let fi = 0;
   if (!slots.hero) slots.hero = ambImatge[fi++] || resta[0] || null;
@@ -145,7 +145,7 @@ export default async function HomePage() {
       <section style={{ paddingTop: '40px', paddingBottom: '40px', borderBottom: `1px solid ${C.black}` }}>
         {seccioHeader('Territori', 'Els pobles', '/pobles', 'Tots els pobles')}
         <div className="home-pobles-grid" style={{
-          display: 'grid', gridTemplateColumns: 'repeat(4, minmax(0,1fr))',
+          display: 'grid', gridTemplateColumns: 'repeat(5, minmax(0,1fr))',
           gap: '2px', background: C.black,
         }}>
           {POBLES.map(p => (
@@ -175,9 +175,8 @@ export default async function HomePage() {
 
       {/* ══ GUIES (home1–home4) ══════════════════════════════ */}
       <section style={{ paddingTop: '40px', paddingBottom: '40px', borderBottom: `1px solid ${C.black}` }}>
-        {seccioHeader('Contingut editorial', 'Guies de la Cerdanya', '/guies', 'Veure totes les guies')}
+        {seccioHeader('Contingut editorial', "Guies de l'Empordà", '/guies', 'Veure totes les guies')}
 
-        {/* Destacada home1 + home2 */}
         <div className="home-guies-dest" style={{
           display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,1fr)',
           gap: '2px', background: C.black, marginBottom: '2px',
@@ -219,7 +218,6 @@ export default async function HomePage() {
           })}
         </div>
 
-        {/* home3 + home4 — format horitzontal compacte */}
         <div className="home-guies-grid" style={{
           display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,1fr)',
           gap: '2px', background: C.black,
