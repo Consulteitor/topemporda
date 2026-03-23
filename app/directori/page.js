@@ -12,7 +12,7 @@ const CATEGORIES = [
   { id: 'serveis', label: 'Serveis' },
 ]
 
-const POBLES_PRINCIPALS = ['Puigcerdà', 'Bellver de Cerdanya', 'Llívia', 'Alp', 'Ger', 'Bolvir']
+const POBLES_PRINCIPALS = ['Figueres', 'Cadaqués', 'Begur', 'Roses', 'Peratallada', "L'Escala"]
 
 const TOTS_POBLES = [...new Set(negocisData.map(n => n.poble).filter(p => p && p.trim()))].sort()
 
@@ -73,9 +73,9 @@ function DirectoriContingut() {
     letterSpacing: '0.15em',
     textTransform: 'uppercase',
     padding: '5px 12px',
-    background: actiu ? '#c8423a' : 'transparent',
+    background: actiu ? '#1a5c8a' : 'transparent',
     color: actiu ? '#faf9f6' : '#9a9489',
-    border: `1px solid ${actiu ? '#c8423a' : '#e8e4dc'}`,
+    border: `1px solid ${actiu ? '#1a5c8a' : '#e8e4dc'}`,
     cursor: 'pointer',
     whiteSpace: 'nowrap',
   })
@@ -125,8 +125,8 @@ function DirectoriContingut() {
               letterSpacing: '0.12em',
               textTransform: 'uppercase',
               padding: '5px 10px',
-              border: `1px solid ${!POBLES_PRINCIPALS.includes(pobleActiu) && pobleActiu ? '#c8423a' : '#e8e4dc'}`,
-              background: !POBLES_PRINCIPALS.includes(pobleActiu) && pobleActiu ? '#c8423a' : 'transparent',
+              border: `1px solid ${!POBLES_PRINCIPALS.includes(pobleActiu) && pobleActiu ? '#1a5c8a' : '#e8e4dc'}`,
+              background: !POBLES_PRINCIPALS.includes(pobleActiu) && pobleActiu ? '#1a5c8a' : 'transparent',
               color: !POBLES_PRINCIPALS.includes(pobleActiu) && pobleActiu ? '#faf9f6' : '#9a9489',
               cursor: 'pointer',
               outline: 'none',
@@ -195,7 +195,7 @@ function DirectoriContingut() {
           <Link key={n.id} href={`/negocis/${n.id}`} style={{ padding: '24px', borderRight: (i % 3 !== 2) ? '1px solid #e8e4dc' : 'none', borderBottom: '1px solid #e8e4dc', textDecoration: 'none', color: 'inherit', display: 'block' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '10px' }}>
               <span style={{ fontFamily: "'IBM Plex Sans', Helvetica, sans-serif", fontSize: '9px', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', background: '#0a0a0a', color: '#faf9f6', padding: '3px 8px' }}>{n.categoria}</span>
-              {n.destacat && <span style={{ fontFamily: "'IBM Plex Sans', Helvetica, sans-serif", fontSize: '9px', color: '#c8423a', letterSpacing: '0.15em', textTransform: 'uppercase' }}>Destacat</span>}
+              {n.destacat && <span style={{ fontFamily: "'IBM Plex Sans', Helvetica, sans-serif", fontSize: '9px', color: '#1a5c8a', letterSpacing: '0.15em', textTransform: 'uppercase' }}>Destacat</span>}
             </div>
             <div style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '9px', color: '#9a9489', letterSpacing: '0.1em', marginBottom: '6px', textTransform: 'uppercase' }}>{n.poble}</div>
             <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '20px', fontWeight: 700, lineHeight: 1.15, marginBottom: '10px' }}>{n.nom}</h3>
