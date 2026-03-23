@@ -26,7 +26,7 @@ const C = {
 
 function inferirCategoria(g) {
   if (g.categoria) return g.categoria;
-  const s = (g.slug || g.id || "").toLowerCase();
+  const s = (String(g.slug || g.id || "")).toLowerCase();
   if (/restaurant|menjar|gastronomia|cuina|top10/.test(s)) return "gastronomia";
   if (/ruta|senderisme|excursio|caminar|cami-de-ronda/.test(s)) return "rutes";
   if (/allotjament|dormir|casa-rural|cases-rurals|hotel/.test(s)) return "allotjament";
