@@ -1,4 +1,4 @@
-const SHEETS_API = 'https://script.google.com/macros/s/AKfycbwoPQmck8k0aDPQ6ijOY0NRFzZ4TI77kd48eZQUR8Izigl-YHnXW1f_zazAhxEBMAhwzQ/exec'
+const SHEETS_API = 'https://script.google.com/macros/s/AKfycbwiKLh4vUWXIotw9sI2oj5yDN5UXB_jIdGuiYW47liHWY8FFcdsFpybKPagMZ9ApWxuYA/exec'
 
 export const metadata = {
   title: 'Verificació de badge | Top Empordà',
@@ -41,7 +41,7 @@ export default async function VerificacioPage({ params }) {
         </h1>
         {badge?.poble && (
           <div style={{ fontFamily: "'IBM Plex Sans', sans-serif", fontSize: '12px', color: C.midGray }}>
-            {badge.poble} · Cerdanya
+            {badge.poble} · Empordà
           </div>
         )}
       </div>
@@ -76,7 +76,7 @@ export default async function VerificacioPage({ params }) {
       {/* Footer de la pàgina */}
       <div style={{ borderTop: `1px solid ${C.warmGray}`, paddingTop: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
         <a href="/" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '18px', fontWeight: 900, color: C.black, textDecoration: 'none' }}>
-          Top<span style={{ color: C.accent }}>.</span>Cerdanya
+          Top<span style={{ color: C.accent }}>.</span>Empordà
         </a>
         <a href="/badge" style={{ fontFamily: "'IBM Plex Sans', sans-serif", fontSize: '10px', letterSpacing: '0.1em', textTransform: 'uppercase', color: C.midGray, textDecoration: 'none', borderBottom: `1px solid ${C.warmGray}` }}>
           Informació sobre els badges →
