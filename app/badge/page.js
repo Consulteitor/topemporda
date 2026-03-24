@@ -1,21 +1,21 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Badge Top Cerdanya — Segell per a negocis de la comarca',
-  description: 'Mostra el teu negoci com a part de la Cerdanya. Tres nivells de badge per a restaurants, allotjaments i negocis locals.',
+  title: 'Badge Top Empordà — Segell per a negocis de la comarca',
+  description: 'Mostra el teu negoci com a part de l'Empordà. Tres nivells de badge per a restaurants, allotjaments i negocis locals.',
 }
 
 const C = {
   black: '#0a0a0a', white: '#faf9f6', warmGray: '#e8e4dc',
-  midGray: '#9a9489', accent: '#c8423a', darkGray: '#3a3530',
+  midGray: '#9a9489', accent: '#1a5c8a', darkGray: '#3a3530',
 }
 
 const BADGES = [
   {
     id: 'present',
     nivell: 'Gratuït',
-    titol: 'Present a Top Cerdanya',
-    desc: 'El teu negoci apareix al directori de Top Cerdanya, el portal de referència de la comarca.',
+    titol: 'Present a Top Empordà',
+    desc: 'El teu negoci apareix al directori de Top Empordà, el portal de referència de la comarca.',
     preu: 'Gratuït',
     color: C.white,
     border: C.black,
@@ -29,22 +29,22 @@ const BADGES = [
     ],
     svg: `<svg width="120" height="80" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
       <rect width="120" height="80" rx="2" fill="#faf9f6" stroke="#0a0a0a" stroke-width="1.5"/>
-      <rect width="120" height="5" rx="2" fill="#c8423a"/>
-      <rect y="3" width="120" height="2" fill="#c8423a"/>
-      <circle cx="60" cy="34" r="3" fill="#c8423a"/>
+      <rect width="120" height="5" rx="2" fill="#1a5c8a"/>
+      <rect y="3" width="120" height="2" fill="#1a5c8a"/>
+      <circle cx="60" cy="34" r="3" fill="#1a5c8a"/>
       <text x="60" y="28" font-family="Georgia,serif" font-size="11" font-weight="700" fill="#0a0a0a" text-anchor="middle">Top.Cerdanya</text>
       <text x="60" y="48" font-family="Arial,sans-serif" font-size="7" fill="#9a9489" text-anchor="middle" letter-spacing="1.5">PRESENT A</text>
       <text x="60" y="59" font-family="Arial,sans-serif" font-size="7" fill="#9a9489" text-anchor="middle" letter-spacing="1.5">TOP CERDANYA</text>
       <line x1="30" y1="68" x2="90" y2="68" stroke="#e8e4dc" stroke-width="0.5"/>
-      <text x="60" y="76" font-family="Arial,sans-serif" font-size="6" fill="#9a9489" text-anchor="middle">topcerdanya.com</text>
+      <text x="60" y="76" font-family="Arial,sans-serif" font-size="6" fill="#9a9489" text-anchor="middle">topemporda.com</text>
     </svg>`,
     embedSlug: 'present',
   },
   {
     id: 'recomanat',
     nivell: 'De pagament',
-    titol: 'Recomanat per Top Cerdanya',
-    desc: 'El teu negoci ha estat seleccionat i recomanat per l\'equip editorial de Top Cerdanya.',
+    titol: 'Recomanat per Top Empordà',
+    desc: 'El teu negoci ha estat seleccionat i recomanat per l\'equip editorial de Top Empordà.',
     preu: '79 €/any',
     color: C.black,
     border: C.black,
@@ -60,13 +60,13 @@ const BADGES = [
     ],
     svg: `<svg width="120" height="80" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
       <rect width="120" height="80" rx="2" fill="#0a0a0a"/>
-      <rect width="120" height="5" rx="2" fill="#c8423a"/>
-      <rect y="3" width="120" height="2" fill="#c8423a"/>
-      <polygon points="60,18 62.4,24.4 69.2,24.4 64,28.4 66.4,34.8 60,30.8 53.6,34.8 56,28.4 50.8,24.4 57.6,24.4" fill="#c8423a"/>
+      <rect width="120" height="5" rx="2" fill="#1a5c8a"/>
+      <rect y="3" width="120" height="2" fill="#1a5c8a"/>
+      <polygon points="60,18 62.4,24.4 69.2,24.4 64,28.4 66.4,34.8 60,30.8 53.6,34.8 56,28.4 50.8,24.4 57.6,24.4" fill="#1a5c8a"/>
       <text x="60" y="48" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.8)" text-anchor="middle" letter-spacing="1.5">RECOMANAT PER</text>
       <text x="60" y="61" font-family="Georgia,serif" font-size="12" font-weight="700" fill="#faf9f6" text-anchor="middle">Top.Cerdanya</text>
       <line x1="30" y1="69" x2="90" y2="69" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
-      <text x="60" y="77" font-family="Arial,sans-serif" font-size="6" fill="rgba(255,255,255,0.3)" text-anchor="middle">topcerdanya.com</text>
+      <text x="60" y="77" font-family="Arial,sans-serif" font-size="6" fill="rgba(255,255,255,0.3)" text-anchor="middle">topemporda.com</text>
     </svg>`,
     embedSlug: 'recomanat',
   },
@@ -89,34 +89,34 @@ const BADGES = [
       'Codi d\'embed llest per copiar',
     ],
     svg: `<svg width="100" height="130" viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg">
-      <rect width="100" height="130" rx="2" fill="#0a0a0a" stroke="#c8423a" stroke-width="1.5"/>
-      <rect width="100" height="8" rx="2" fill="#c8423a"/>
-      <rect y="5" width="100" height="3" fill="#c8423a"/>
+      <rect width="100" height="130" rx="2" fill="#0a0a0a" stroke="#1a5c8a" stroke-width="1.5"/>
+      <rect width="100" height="8" rx="2" fill="#1a5c8a"/>
+      <rect y="5" width="100" height="3" fill="#1a5c8a"/>
       <text x="50" y="45" font-family="Georgia,serif" font-size="52" font-weight="900" fill="rgba(200,66,58,0.1)" text-anchor="middle">1</text>
-      <text x="50" y="38" font-family="Arial,sans-serif" font-size="7" font-weight="700" fill="#c8423a" text-anchor="middle" letter-spacing="2">MILLOR RESTAURANT</text>
+      <text x="50" y="38" font-family="Arial,sans-serif" font-size="7" font-weight="700" fill="#1a5c8a" text-anchor="middle" letter-spacing="2">MILLOR RESTAURANT</text>
       <text x="50" y="55" font-family="Georgia,serif" font-size="14" font-weight="700" fill="#faf9f6" text-anchor="middle">Cerdanya</text>
       <text x="50" y="70" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.4)" text-anchor="middle" letter-spacing="1">2026</text>
       <line x1="20" y1="80" x2="80" y2="80" stroke="rgba(200,66,58,0.3)" stroke-width="0.5"/>
       <text x="50" y="95" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.25)" text-anchor="middle" letter-spacing="1">TOP CERDANYA</text>
-      <text x="50" y="108" font-family="Arial,sans-serif" font-size="6" fill="rgba(255,255,255,0.15)" text-anchor="middle">topcerdanya.com</text>
+      <text x="50" y="108" font-family="Arial,sans-serif" font-size="6" fill="rgba(255,255,255,0.15)" text-anchor="middle">topemporda.com</text>
     </svg>`,
     embedSlug: 'millor-restaurant',
   },
 ]
 
 const EMBED_CODES = {
-  present: (slug) => `<a href="https://topcerdanya.com/directori/${slug}" title="Present a Top Cerdanya" target="_blank" rel="noopener">
-  <img src="https://topcerdanya.com/badges/present.svg"
-       alt="Present a Top Cerdanya"
+  present: (slug) => `<a href="https://topemporda.com/directori/${slug}" title="Present a Top Empordà" target="_blank" rel="noopener">
+  <img src="https://topemporda.com/badges/present.svg"
+       alt="Present a Top Empordà"
        width="180" height="80" />
 </a>`,
-  recomanat: (slug) => `<a href="https://topcerdanya.com/directori/${slug}" title="Recomanat per Top Cerdanya" target="_blank" rel="noopener">
-  <img src="https://topcerdanya.com/badges/recomanat.svg"
-       alt="Recomanat per Top Cerdanya"
+  recomanat: (slug) => `<a href="https://topemporda.com/directori/${slug}" title="Recomanat per Top Empordà" target="_blank" rel="noopener">
+  <img src="https://topemporda.com/badges/recomanat.svg"
+       alt="Recomanat per Top Empordà"
        width="180" height="80" />
 </a>`,
-  'millor-restaurant': (slug) => `<a href="https://topcerdanya.com/directori/${slug}" title="Millor Restaurant Cerdanya 2026" target="_blank" rel="noopener">
-  <img src="https://topcerdanya.com/badges/millor-restaurant.svg"
+  'millor-restaurant': (slug) => `<a href="https://topemporda.com/directori/${slug}" title="Millor Restaurant Cerdanya 2026" target="_blank" rel="noopener">
+  <img src="https://topemporda.com/badges/millor-restaurant.svg"
        alt="Millor Restaurant Cerdanya 2026"
        width="120" height="156" />
 </a>`,
@@ -130,13 +130,13 @@ export default function BadgePage() {
         {/* CAP */}
         <div style={{ padding: 'clamp(32px,5vw,64px) 0 40px', borderBottom: `2px solid ${C.black}`, marginBottom: '48px' }}>
           <div style={{ fontFamily: "'IBM Plex Sans', sans-serif", fontSize: '10px', fontWeight: 600, letterSpacing: '0.2em', textTransform: 'uppercase', color: C.accent, marginBottom: '16px' }}>
-            Col·labora amb Top Cerdanya
+            Col·labora amb Top Empordà
           </div>
           <h1 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 'clamp(28px,4vw,52px)', fontWeight: 900, lineHeight: 1.05, letterSpacing: '-0.02em', color: C.black, marginBottom: '20px' }}>
-            Posa el segell Top Cerdanya<br />al teu negoci
+            Posa el segell Top Empordà<br />al teu negoci
           </h1>
           <p style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 'clamp(15px,2vw,18px)', fontWeight: 300, lineHeight: 1.7, color: C.darkGray, maxWidth: '620px' }}>
-            Top Cerdanya és el portal de referència de la comarca. Si el teu negoci hi apareix, ara pots mostrar-ho als teus clients amb un badge verificat.
+            Top Empordà és el portal de referència de la comarca. Si el teu negoci hi apareix, ara pots mostrar-ho als teus clients amb un badge verificat.
           </p>
         </div>
 
@@ -184,7 +184,7 @@ export default function BadgePage() {
                     Ja disponible
                   </div>
                 ) : (
-                  <a href="mailto:info@topcerdanya.com?subject=Badge Top Cerdanya" style={{ fontFamily: "'IBM Plex Sans', sans-serif", fontSize: '10px', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: C.white, background: C.black, padding: '10px 20px', textDecoration: 'none' }}>
+                  <a href="mailto:info@topemporda.com?subject=Badge Top Empordà" style={{ fontFamily: "'IBM Plex Sans', sans-serif", fontSize: '10px', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: C.white, background: C.black, padding: '10px 20px', textDecoration: 'none' }}>
                     Sol·licitar →
                   </a>
                 )}
@@ -220,7 +220,7 @@ export default function BadgePage() {
             {[
               { n: '1', titol: 'Tria el badge', desc: 'Escull el nivell que s\'adapta al teu negoci. El gratuït està disponible per a tothom al directori.' },
               { n: '2', titol: 'Descarrega o sol·licita', desc: 'Per al badge gratuït, descarrega el fitxer SVG directament. Per als de pagament, envia\'ns un mail i t\'enviem el badge en 24h.' },
-              { n: '3', titol: 'Posa\'l al teu web', desc: 'Copia el codi d\'embed, enganxa\'l on vulguis i llest. El badge linka automàticament al teu perfil verificat a Top Cerdanya.' },
+              { n: '3', titol: 'Posa\'l al teu web', desc: 'Copia el codi d\'embed, enganxa\'l on vulguis i llest. El badge linka automàticament al teu perfil verificat a Top Empordà.' },
             ].map(p => (
               <div key={p.n} style={{ background: C.white, padding: 'clamp(20px,3vw,28px)' }}>
                 <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '48px', fontWeight: 900, color: C.warmGray, lineHeight: 1, marginBottom: '12px' }}>{p.n}</div>
@@ -240,9 +240,9 @@ export default function BadgePage() {
             Cada badge té una pàgina de verificació pública
           </h2>
           <p style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '15px', lineHeight: 1.7, color: 'rgba(255,255,255,0.6)', marginBottom: '16px', maxWidth: '600px' }}>
-            El badge que poses al teu web linka a <code style={{ color: C.accent }}>topcerdanya.com/badge/verificat/nom-negoci</code>. Qualsevol client pot comprovar que el badge és legítim i que el teu negoci forma part de Top Cerdanya.
+            El badge que poses al teu web linka a <code style={{ color: C.accent }}>topemporda.com/badge/verificat/nom-negoci</code>. Qualsevol client pot comprovar que el badge és legítim i que el teu negoci forma part de Top Empordà.
           </p>
-          <a href="mailto:info@topcerdanya.com" style={{ fontFamily: "'IBM Plex Sans', sans-serif", fontSize: '11px', fontWeight: 600, letterSpacing: '0.15em', textTransform: 'uppercase', color: C.white, borderBottom: `1px solid rgba(255,255,255,0.3)`, paddingBottom: '2px', textDecoration: 'none' }}>
+          <a href="mailto:info@topemporda.com" style={{ fontFamily: "'IBM Plex Sans', sans-serif", fontSize: '11px', fontWeight: 600, letterSpacing: '0.15em', textTransform: 'uppercase', color: C.white, borderBottom: `1px solid rgba(255,255,255,0.3)`, paddingBottom: '2px', textDecoration: 'none' }}>
             Contacta'ns per saber-ne més →
           </a>
         </section>

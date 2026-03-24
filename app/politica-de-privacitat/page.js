@@ -1,12 +1,12 @@
 export const metadata = {
-  title: 'Política de Privacitat | Top Cerdanya',
-  description: 'Política de privacitat de Top Cerdanya: com tractem les teves dades personals i quins drets tens.',
+  title: 'Política de Privacitat | Top Empordà',
+  description: 'Política de privacitat de Top Empordà: com tractem les teves dades personals i quins drets tens.',
   robots: 'noindex',
 }
 
 const C = {
   black: '#0a0a0a', white: '#faf9f6', warmGray: '#e8e4dc',
-  midGray: '#9a9489', accent: '#c8423a',
+  midGray: '#9a9489', accent: '#1a5c8a',
 }
 
 const S = {
@@ -29,9 +29,9 @@ export default function PoliticaPrivacitat() {
 
       <h2 style={S.h2}>1. Responsable del tractament</h2>
       <p style={{ ...S.p, background: C.warmGray, padding: '16px 20px', fontFamily: "'IBM Plex Sans', Helvetica, sans-serif", fontSize: '14px', lineHeight: 1.7 }}>
-        <strong>Top Cerdanya</strong><br />
-        Domicili: La Cerdanya, Catalunya, Espanya<br />
-        Correu electrònic: info@topcerdanya.com
+        <strong>Top Empordà</strong><br />
+        Domicili: L'Empordà, Catalunya, Espanya<br />
+        Correu electrònic: info@topemporda.com
       </p>
 
       <h2 style={S.h2}>2. Dades que recollim i per a què</h2>
@@ -66,7 +66,7 @@ export default function PoliticaPrivacitat() {
       </table>
 
       <h3 style={S.h3}>2.2 Preferències de cookies</h3>
-      <p style={S.p}>Guardem la teva decisió sobre les cookies (acceptar/rebutjar) al <code>localStorage</code> del teu navegador, amb la clau <code>tc_cookies</code>. Aquesta dada no surt mai del teu dispositiu i no és accessible per a Top Cerdanya.</p>
+      <p style={S.p}>Guardem la teva decisió sobre les cookies (acceptar/rebutjar) al <code>localStorage</code> del teu navegador, amb la clau <code>tc_cookies</code>. Aquesta dada no surt mai del teu dispositiu i no és accessible per a Top Empordà.</p>
 
       <h2 style={S.h2}>3. Destinataris de les dades</h2>
       <p style={S.p}>Les dades recollides a través de Google Analytics es transfereixen a Google LLC, situada als Estats Units, emparat per les clàusules contractuals tipus aprovades per la Comissió Europea. No compartim les teves dades amb cap altre tercer.</p>
@@ -76,13 +76,13 @@ export default function PoliticaPrivacitat() {
 
       <h2 style={S.h2}>5. Els teus drets</h2>
       <p style={S.p}>En virtut del RGPD, tens els drets d'accés, rectificació, supressió, limitació, portabilitat i oposició al tractament de les teves dades. Com que les dades recollides son anònimes i no permeten identificar-te, l'exercici d'alguns d'aquests drets pot ser limitat tècnicament.</p>
-      <p style={S.p}>Per exercir els teus drets o per a qualsevol consulta, pots contactar amb nosaltres a: <strong>info@topcerdanya.com</strong></p>
+      <p style={S.p}>Per exercir els teus drets o per a qualsevol consulta, pots contactar amb nosaltres a: <strong>info@topemporda.com</strong></p>
       <p style={S.p}>Si consideres que el tractament de les teves dades vulnera la normativa, tens dret a presentar una reclamació davant l'<a href="https://www.aepd.es" style={{ color: C.accent }}>Agència Espanyola de Protecció de Dades (AEPD)</a>.</p>
 
       <h2 style={S.h2}>6. Com retirar el consentiment</h2>
       <p style={S.p}>Pots retirar el consentiment a les cookies en qualsevol moment de dues maneres:</p>
       <ul style={{ paddingLeft: '24px', lineHeight: 1.8, marginBottom: '16px' }}>
-        <li>Esborra les dades del navegador (localStorage) per al domini topcerdanya.com. La propera visita et tornarem a preguntar.</li>
+        <li>Esborra les dades del navegador (localStorage) per al domini topemporda.com. La propera visita et tornarem a preguntar.</li>
         <li>Configura el teu navegador per bloquejar totes les cookies de tercers.</li>
       </ul>
       <p style={S.p}>→ <a href="/politica-de-cookies" style={{ color: C.accent }}>Consulta la nostra Política de Cookies</a></p>

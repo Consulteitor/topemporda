@@ -1,13 +1,13 @@
 const SHEETS_API = 'https://script.google.com/macros/s/AKfycbwoPQmck8k0aDPQ6ijOY0NRFzZ4TI77kd48eZQUR8Izigl-YHnXW1f_zazAhxEBMAhwzQ/exec'
 
 export const metadata = {
-  title: 'Verificació de badge | Top Cerdanya',
+  title: 'Verificació de badge | Top Empordà',
   robots: 'noindex',
 }
 
 const C = {
   black: '#0a0a0a', white: '#faf9f6', warmGray: '#e8e4dc',
-  midGray: '#9a9489', accent: '#c8423a', green: '#2d6a4f',
+  midGray: '#9a9489', accent: '#1a5c8a', green: '#2d6a4f',
 }
 
 async function getBadge(slug) {
@@ -68,8 +68,8 @@ export default async function VerificacioPage({ params }) {
       {/* Missatge si no verificat */}
       {!verificat && (
         <div style={{ background: '#fff5f5', border: `1px solid ${C.accent}`, padding: '20px', marginBottom: '32px', fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '14px', lineHeight: 1.7, color: C.darkGray }}>
-          Aquest negoci no és membre verificat de Top Cerdanya o el seu badge ha caducat. Si creus que és un error, contacta'ns a{' '}
-          <a href="mailto:info@topcerdanya.com" style={{ color: C.accent }}>info@topcerdanya.com</a>.
+          Aquest negoci no és membre verificat de Top Empordà o el seu badge ha caducat. Si creus que és un error, contacta'ns a{' '}
+          <a href="mailto:info@topemporda.com" style={{ color: C.accent }}>info@topemporda.com</a>.
         </div>
       )}
 

@@ -32,24 +32,24 @@ export async function generateMetadata({ params }) {
   const { slug, subtema } = await params;
   const pobla = await getPoblaBySlug(slug);
   const info = SUBTEMES[subtema];
-  if (!pobla || !info) return { title: "Pàgina no trobada | Top Cerdanya" };
+  if (!pobla || !info) return { title: "Pàgina no trobada | Top Empordà" };
 
   const titol = `${info.titol} a ${pobla.titol}`;
-  const desc = `${info.desc} a ${pobla.titol}, la Cerdanya. Guia pràctica i actualitzada 2026 amb recomanacions concretes.`;
+  const desc = `${info.desc} a ${pobla.titol}, l'Empordà. Guia pràctica i actualitzada 2026 amb recomanacions concretes.`;
 
   return {
-    title: `${titol} — Guia 2026 | Top Cerdanya`,
+    title: `${titol} — Guia 2026 | Top Empordà`,
     description: desc,
     openGraph: {
       title: titol,
       description: desc,
-      url: `https://topcerdanya.com/pobles/${slug}/${subtema}`,
-      siteName: "Top Cerdanya",
+      url: `https://topemporda.com/pobles/${slug}/${subtema}`,
+      siteName: "Top Empordà",
       locale: "ca_ES",
       type: "article",
     },
     alternates: {
-      canonical: `https://topcerdanya.com/pobles/${slug}/${subtema}`,
+      canonical: `https://topemporda.com/pobles/${slug}/${subtema}`,
     },
   };
 }
@@ -68,7 +68,7 @@ const C = {
   white: "#faf9f6",
   warmGray: "#e8e4dc",
   midGray: "#9a9489",
-  accent: "#c8423a",
+  accent: "#1a5c8a",
 };
 
 const SECCIONS = [
@@ -222,7 +222,7 @@ export default async function SubtemaPage({ params }) {
             fontFamily: "'IBM Plex Sans', Helvetica, sans-serif",
             fontSize: "10px", color: C.midGray, letterSpacing: "0.05em"
           }}>
-            Top Cerdanya · 2026
+            Top Empordà · 2026
           </span>
         </div>
       </div>

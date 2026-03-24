@@ -15,25 +15,25 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const pobla = await getPoblaBySlug(slug);
-  if (!pobla) return { title: "Poble no trobat | Top Cerdanya" };
+  if (!pobla) return { title: "Poble no trobat | Top Empordà" };
 
   const titol = pobla.titol || slug;
-  const desc = pobla.meta_description || `Guia completa de ${titol}: què fer, on menjar, on dormir, rutes i immobiliària. Tot el que cal saber sobre ${titol} a la Cerdanya.`;
+  const desc = pobla.meta_description || `Guia completa de ${titol}: què fer, on menjar, on dormir, rutes i immobiliària. Tot el que cal saber sobre ${titol} a l'Empordà.`;
 
   return {
-    title: `${titol} — Guia completa 2026 | Top Cerdanya`,
+    title: `${titol} — Guia completa 2026 | Top Empordà`,
     description: desc,
     openGraph: {
       title: `${titol} — Guia completa 2026`,
       description: desc,
-      url: `https://topcerdanya.com/pobles/${slug}`,
-      siteName: "Top Cerdanya",
+      url: `https://topemporda.com/pobles/${slug}`,
+      siteName: "Top Empordà",
       locale: "ca_ES",
       type: "article",
       ...(pobla.imatge ? { images: [{ url: pobla.imatge, width: 1200, height: 630, alt: titol }] } : {}),
     },
     alternates: {
-      canonical: `https://topcerdanya.com/pobles/${slug}`,
+      canonical: `https://topemporda.com/pobles/${slug}`,
     },
   };
 }
@@ -52,7 +52,7 @@ const C = {
   white: "#faf9f6",
   warmGray: "#e8e4dc",
   midGray: "#9a9489",
-  accent: "#c8423a",
+  accent: "#1a5c8a",
 };
 
 const SECCIONS = [
@@ -306,7 +306,7 @@ export default async function PoblaPage({ params }) {
             fontFamily: "'IBM Plex Sans', Helvetica, sans-serif",
             fontSize: "10px", color: C.midGray, letterSpacing: "0.05em"
           }}>
-            Top Cerdanya · 2026
+            Top Empordà · 2026
           </span>
         </div>
       </div>

@@ -61,7 +61,7 @@ export default function AdminPage() {
   if (!auth) return (
     <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#faf9f6' }}>
       <form onSubmit={login} style={{ background: '#fff', border: '1px solid #e0ddd6', borderRadius: 12, padding: '2rem', width: 320 }}>
-        <div style={{ fontFamily: 'serif', fontSize: 22, fontWeight: 700, marginBottom: 4 }}>Top Cerdanya</div>
+        <div style={{ fontFamily: 'serif', fontSize: 22, fontWeight: 700, marginBottom: 4 }}>Top Empordà</div>
         <div style={{ fontSize: 13, color: '#888', marginBottom: 24 }}>Backoffice · Accés restringit</div>
         <input
           type="password"
@@ -86,10 +86,10 @@ export default function AdminPage() {
         {/* Header */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 24, paddingBottom: 16, borderBottom: '1px solid #e0ddd6' }}>
           <div>
-            <div style={{ fontSize: 18, fontWeight: 600 }}>Top Cerdanya — Backoffice</div>
-            <div style={{ fontSize: 12, color: '#888', marginTop: 2 }}>topcerdanya.com</div>
+            <div style={{ fontSize: 18, fontWeight: 600 }}>Top Empordà — Backoffice</div>
+            <div style={{ fontSize: 12, color: '#888', marginTop: 2 }}>topemporda.com</div>
           </div>
-          <a href="https://topcerdanya.com" target="_blank" style={{ fontSize: 13, color: '#555', textDecoration: 'none', border: '1px solid #ccc', padding: '6px 12px', borderRadius: 8 }}>
+          <a href="https://topemporda.com" target="_blank" style={{ fontSize: 13, color: '#555', textDecoration: 'none', border: '1px solid #ccc', padding: '6px 12px', borderRadius: 8 }}>
             ↗ Veure site
           </a>
         </div>
@@ -114,7 +114,7 @@ export default function AdminPage() {
                 <div style={{ fontSize: 11, color: '#999', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 4 }}>Pàgina</div>
                 <div style={{ fontSize: 15, fontWeight: 500, marginBottom: 14 }}>{s.label}</div>
                 <div style={{ display: 'flex', gap: 8 }}>
-                  <a href={`https://topcerdanya.com${s.path}`} target="_blank" style={{ fontSize: 12, padding: '5px 10px', border: '1px solid #ccc', borderRadius: 6, textDecoration: 'none', color: '#555' }}>
+                  <a href={`https://topemporda.com${s.path}`} target="_blank" style={{ fontSize: 12, padding: '5px 10px', border: '1px solid #ccc', borderRadius: 6, textDecoration: 'none', color: '#555' }}>
                     ↗ Veure
                   </a>
                 </div>
@@ -144,7 +144,7 @@ export default function AdminPage() {
                     </span>
                     <span style={{ fontSize: 13, flex: 1 }}>{g.titol || g.slug}</span>
                     <span style={{ fontSize: 11, color: '#aaa' }}>{g.categoria || ''}</span>
-                    <a href={`https://topcerdanya.com/guies/${g.slug}`} target="_blank" style={{ fontSize: 11, color: '#888', textDecoration: 'none' }}>↗</a>
+                    <a href={`https://topemporda.com/guies/${g.slug}`} target="_blank" style={{ fontSize: 11, color: '#888', textDecoration: 'none' }}>↗</a>
                   </div>
                 );
               })}

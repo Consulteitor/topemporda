@@ -16,25 +16,25 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const guia = await getGuiaBySlug(slug);
-  if (!guia) return { title: "Guia no trobada | Top Cerdanya" };
+  if (!guia) return { title: "Guia no trobada | Top Empordà" };
 
   const titol = guia.titol || slug;
-  const desc = guia.meta_description || `Guia completa sobre ${titol} a la Cerdanya. Informació pràctica i actualitzada 2026.`;
+  const desc = guia.meta_description || `Guia completa sobre ${titol} a l'Empordà. Informació pràctica i actualitzada 2026.`;
 
   return {
-    title: `${titol} | Top Cerdanya`,
+    title: `${titol} | Top Empordà`,
     description: desc,
     openGraph: {
       title: titol,
       description: desc,
-      url: `https://topcerdanya.com/guies/${slug}`,
-      siteName: "Top Cerdanya",
+      url: `https://topemporda.com/guies/${slug}`,
+      siteName: "Top Empordà",
       locale: "ca_ES",
       type: "article",
       ...(guia.imatge ? { images: [{ url: guia.imatge, width: 1200, height: 630, alt: titol }] } : {}),
     },
     alternates: {
-      canonical: `https://topcerdanya.com/guies/${slug}`,
+      canonical: `https://topemporda.com/guies/${slug}`,
     },
   };
 }
@@ -53,7 +53,7 @@ const C = {
   white: "#faf9f6",
   warmGray: "#e8e4dc",
   midGray: "#9a9489",
-  accent: "#c8423a",
+  accent: "#1a5c8a",
 };
 
 
@@ -155,14 +155,14 @@ export default async function GuiaPage({ params }) {
             </div>
             <div style={{ border: `1px solid ${C.black}`, padding: "20px", marginBottom: "24px" }}>
               <div style={{ fontFamily: "'IBM Plex Sans', Helvetica, sans-serif", fontSize: "10px", fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", borderBottom: `2px solid ${C.black}`, paddingBottom: "12px", marginBottom: "16px" }}>Directori</div>
-              <p style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: "13px", fontWeight: 300, color: "#5a5550", lineHeight: 1.5, marginBottom: "14px" }}>Troba negocis, restaurants i allotjaments a la Cerdanya.</p>
+              <p style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: "13px", fontWeight: 300, color: "#5a5550", lineHeight: 1.5, marginBottom: "14px" }}>Troba negocis, restaurants i allotjaments a l'Empordà.</p>
               <Link href="/directori" style={{ display: "block", background: C.black, color: C.white, padding: "12px", textAlign: "center", fontFamily: "'IBM Plex Sans', Helvetica, sans-serif", fontSize: "10px", fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", textDecoration: "none" }}>
                 Veure el directori →
               </Link>
             </div>
             <div style={{ border: `1px solid ${C.black}`, padding: "20px", background: C.black }}>
               <div style={{ fontFamily: "'IBM Plex Sans', Helvetica, sans-serif", fontSize: "10px", fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", borderBottom: "1px solid rgba(255,255,255,0.15)", paddingBottom: "12px", marginBottom: "16px", color: C.white }}>Ets un negoci?</div>
-              <p style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: "13px", fontWeight: 300, color: "rgba(255,255,255,0.6)", lineHeight: 1.5, marginBottom: "14px" }}>Apareix a Top Cerdanya i posa el badge al teu web.</p>
+              <p style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: "13px", fontWeight: 300, color: "rgba(255,255,255,0.6)", lineHeight: 1.5, marginBottom: "14px" }}>Apareix a Top Empordà i posa el badge al teu web.</p>
               <Link href="/badge" style={{ display: "block", background: C.accent, color: C.white, padding: "12px", textAlign: "center", fontFamily: "'IBM Plex Sans', Helvetica, sans-serif", fontSize: "10px", fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", textDecoration: "none" }}>
                 Aconseguir el badge →
               </Link>
@@ -174,7 +174,7 @@ export default async function GuiaPage({ params }) {
           <Link href="/guies" style={{ fontFamily: "'IBM Plex Sans', Helvetica, sans-serif", fontSize: "11px", letterSpacing: "0.1em", textTransform: "uppercase", color: C.midGray, textDecoration: "none", borderBottom: `1px solid ${C.midGray}`, paddingBottom: "2px" }}>
             ← Totes les guies
           </Link>
-          <span style={{ fontFamily: "'IBM Plex Sans', Helvetica, sans-serif", fontSize: "10px", color: C.midGray, letterSpacing: "0.05em" }}>Top Cerdanya · 2026</span>
+          <span style={{ fontFamily: "'IBM Plex Sans', Helvetica, sans-serif", fontSize: "10px", color: C.midGray, letterSpacing: "0.05em" }}>Top Empordà · 2026</span>
         </div>
       </div>
     </div>

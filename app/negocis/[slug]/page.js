@@ -14,7 +14,7 @@ export async function generateMetadata({ params }) {
   const negoci = await getNegociBySlug(slug)
   if (!negoci) return {}
   return {
-    title: `${negoci.nom} — ${negoci.poble} | Top Cerdanya`,
+    title: `${negoci.nom} — ${negoci.poble} | Top Empordà`,
     description: negoci.descripcio,
   }
 }
@@ -37,7 +37,7 @@ export default async function FitxaNegoci({ params }) {
       <div style={{ borderBottom: '3px solid #0a0a0a', paddingBottom: '32px', marginBottom: '40px' }}>
         <div style={{ marginBottom: '12px' }}>
           <span style={{ fontFamily: "'IBM Plex Sans', Helvetica, sans-serif", fontSize: '9px', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', background: '#0a0a0a', color: '#faf9f6', padding: '3px 8px', marginRight: '16px' }}>{n.categoria}</span>
-          <span style={{ fontFamily: "'IBM Plex Sans', Helvetica, sans-serif", fontSize: '10px', color: '#9a9489', letterSpacing: '0.1em' }}>{n.poble} · La Cerdanya</span>
+          <span style={{ fontFamily: "'IBM Plex Sans', Helvetica, sans-serif", fontSize: '10px', color: '#9a9489', letterSpacing: '0.1em' }}>{n.poble} · L'Empordà</span>
         </div>
         <h1 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 'clamp(36px,5vw,64px)', fontWeight: 900, lineHeight: 1.0, letterSpacing: '-0.02em', marginBottom: '20px' }}>
           {n.nom}
@@ -47,14 +47,14 @@ export default async function FitxaNegoci({ params }) {
           <strong style={{ color: '#0a0a0a', fontWeight: 500 }}>{n.valoracio}</strong>
           <span>·</span>
           <span>{n.ressenyes} ressenyes</span>
-          {n.destacat && <><span>·</span><span style={{ color: '#c8423a', fontWeight: 500 }}>Negoci destacat</span></>}
+          {n.destacat && <><span>·</span><span style={{ color: '#1a5c8a', fontWeight: 500 }}>Negoci destacat</span></>}
         </div>
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: '48px' }}>
         <div>
           <div style={{ width: '100%', aspectRatio: '16/9', marginBottom: '32px', background: 'linear-gradient(135deg,#d4cfc5 0%,#b8b2a5 50%,#9a9489 100%)', display: 'flex', alignItems: 'flex-end', padding: '16px' }}>
-            <span style={{ fontFamily: "'IBM Plex Sans', Helvetica, sans-serif", fontSize: '10px', color: 'rgba(255,255,255,0.7)' }}>{n.nom} · Foto: Arxiu Top Cerdanya</span>
+            <span style={{ fontFamily: "'IBM Plex Sans', Helvetica, sans-serif", fontSize: '10px', color: 'rgba(255,255,255,0.7)' }}>{n.nom} · Foto: Arxiu Top Empordà</span>
           </div>
           <p style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '19px', fontWeight: 300, lineHeight: 1.7, color: '#3a3733', marginBottom: '28px' }}>
             {n.descripcio}
@@ -85,7 +85,7 @@ export default async function FitxaNegoci({ params }) {
             {n.web && (
               <div style={{ marginBottom: '20px' }}>
                 <div style={{ fontFamily: "'IBM Plex Sans', Helvetica, sans-serif", fontSize: '9px', color: '#9a9489', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '4px' }}>Web</div>
-                <a href={`https://${n.web}`} target="_blank" rel="noopener noreferrer" style={{ fontFamily: "'IBM Plex Sans', Helvetica, sans-serif", fontSize: '13px', color: '#c8423a', borderBottom: '1px solid #c8423a', paddingBottom: '1px' }}>
+                <a href={`https://${n.web}`} target="_blank" rel="noopener noreferrer" style={{ fontFamily: "'IBM Plex Sans', Helvetica, sans-serif", fontSize: '13px', color: '#1a5c8a', borderBottom: '1px solid #1a5c8a', paddingBottom: '1px' }}>
                   {n.web} ↗
                 </a>
               </div>

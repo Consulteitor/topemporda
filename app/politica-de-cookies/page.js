@@ -1,11 +1,11 @@
 export const metadata = {
-  title: 'Política de Cookies | Top Cerdanya',
-  description: 'Informació sobre les cookies que utilitza Top Cerdanya i com gestionar-les.',
+  title: 'Política de Cookies | Top Empordà',
+  description: 'Informació sobre les cookies que utilitza Top Empordà i com gestionar-les.',
 }
 
 const C = {
   black: '#0a0a0a', white: '#faf9f6', warmGray: '#e8e4dc',
-  midGray: '#9a9489', accent: '#c8423a',
+  midGray: '#9a9489', accent: '#1a5c8a',
 }
 
 export default function PoliticaCookies() {
@@ -32,7 +32,7 @@ export default function PoliticaCookies() {
         <p>Les cookies són petits fitxers de text que els llocs web emmagatzemen al teu dispositiu quan els visites. Permeten que el lloc recordi les teves preferències i analitzi com s'utilitza.</p>
 
         <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '22px', fontWeight: 700, marginBottom: '12px', marginTop: '32px' }}>Quines cookies usem?</h2>
-        <p>Top Cerdanya utilitza únicament <strong>Google Analytics 4 (GA4)</strong>, una eina d'anàlisi web que ens permet entendre com els visitants interactuen amb el site: quines pàgines es visiten més, des d'on arriba la gent, i quant temps s'hi passen.</p>
+        <p>Top Empordà utilitza únicament <strong>Google Analytics 4 (GA4)</strong>, una eina d'anàlisi web que ens permet entendre com els visitants interactuen amb el site: quines pàgines es visiten més, des d'on arriba la gent, i quant temps s'hi passen.</p>
         <p>No usem cookies publicitàries ni compartim les teves dades amb tercers.</p>
 
         <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '22px', fontWeight: 700, marginBottom: '12px', marginTop: '32px' }}>Cookie de preferències</h2>

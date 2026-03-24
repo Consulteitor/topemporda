@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         >
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
             <span style={{ fontFamily: "'Playfair Display', serif", fontSize: '28px', fontWeight: 900, color: '#0a0a0a' }}>
-              Top<span style={{ color: '#c8423a' }}>.</span>Empordà
+              Top<span style={{ color: '#1a5c8a' }}>.</span>Empordà
             </span>
             <span>© 2026 Top Empordà · Tots els drets reservats · Fet amb amor a l'Empordà</span>
           </div>
