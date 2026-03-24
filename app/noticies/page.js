@@ -2,20 +2,20 @@ import Link from 'next/link';
 import { getNoticies } from '../../lib/sheets';
 
 export const metadata = {
-  title: 'Notícies de la Cerdanya | Top Cerdanya',
-  description: 'Totes les notícies de la Cerdanya. Actualitat local, cultura, esports, turisme i societat de la comarca.',
+  title: "Notícies de l'Empordà | Top Empordà",
+  description: "Totes les notícies de l'Empordà. Actualitat local, cultura, esports, turisme i societat de la comarca.",
 };
 
 const C = {
   black: '#0a0a0a', white: '#faf9f6', warmGray: '#e8e4dc',
-  midGray: '#9a9489', accent: '#c8423a',
+  midGray: '#9a9489', accent: '#1a5c8a',
   serif: "'Playfair Display', Georgia, serif",
   sans: "'IBM Plex Sans', Helvetica, sans-serif",
 };
 
 const CAT_COLORS = {
   'Salut': '#2d6a4f', 'Mobilitat': '#1d3557', 'Economia': '#6b4226',
-  'Patrimoni': '#5c4a1e', 'Joves': '#7b2d8b', 'Esports': '#c8423a',
+  'Patrimoni': '#5c4a1e', 'Joves': '#7b2d8b', 'Esports': '#1a5c8a',
   'Cultura': '#2c3e50', 'Natura': '#2d6a4f', 'Local': '#1d3557',
   'Turisme': '#6b4226', 'Educació': '#7b2d8b', 'Gastronomia': '#8b4513',
 };
@@ -48,7 +48,7 @@ export default async function NoticiesPage() {
         }}>Notícies</h1>
         <p style={{
           fontFamily: C.sans, fontSize: '13px', color: C.midGray, margin: 0,
-        }}>Actualitat de la Cerdanya · Región7 i Pànxing</p>
+        }}>Actualitat de l'Empordà</p>
       </div>
 
       {/* Llista */}
@@ -75,30 +75,27 @@ export default async function NoticiesPage() {
                   alignItems: 'center',
                 }}>
                   <div>
-                    {/* Categoria + font */}
                     <div style={{ display: 'flex', gap: '8px', alignItems: 'center', marginBottom: '8px' }}>
                       <span style={{
                         fontFamily: C.sans, fontSize: '9px', fontWeight: 600,
                         letterSpacing: '0.18em', textTransform: 'uppercase',
                         color: CAT_COLORS[n.categoria] || C.accent,
                       }}>{n.categoria}</span>
-                      <span style={{ color: C.warmGray }}>·</span>
-                      <span style={{
-                        fontFamily: C.sans, fontSize: '9px', fontWeight: 600,
-                        letterSpacing: '0.12em', textTransform: 'uppercase',
-                        background: fontStyle.bg, color: fontStyle.text,
-                        padding: '2px 6px',
-                      }}>{n.font}</span>
+                      {n.font && <>
+                        <span style={{ color: C.warmGray }}>·</span>
+                        <span style={{
+                          fontFamily: C.sans, fontSize: '9px', fontWeight: 600,
+                          letterSpacing: '0.12em', textTransform: 'uppercase',
+                          background: fontStyle.bg, color: fontStyle.text,
+                          padding: '2px 6px',
+                        }}>{n.font}</span>
+                      </>}
                     </div>
-
-                    {/* Títol */}
                     <div style={{
                       fontFamily: C.serif, fontSize: 'clamp(16px,2vw,20px)',
                       fontWeight: 700, lineHeight: 1.2, color: C.black,
                       marginBottom: n.resum ? '8px' : '0',
                     }}>{n.titol}</div>
-
-                    {/* Resum si en té */}
                     {n.resum && (
                       <p style={{
                         fontFamily: C.sans, fontSize: '13px', color: C.midGray,
@@ -106,8 +103,6 @@ export default async function NoticiesPage() {
                       }}>{n.resum}</p>
                     )}
                   </div>
-
-                  {/* Data + fletxa */}
                   <div style={{ textAlign: 'right', flexShrink: 0 }}>
                     <div style={{
                       fontFamily: C.sans, fontSize: '11px', color: C.midGray,
