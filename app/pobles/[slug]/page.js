@@ -19,12 +19,15 @@ export async function generateMetadata({ params }) {
 
   const titol = pobla.titol || slug;
   const desc = pobla.meta_description || `Guia completa de ${titol}: què fer, on menjar, on dormir, rutes i immobiliària. Tot el que cal saber sobre ${titol} a l'Empordà.`;
+  const metaTitle = pobla.meta_title
+    ? `${pobla.meta_title} | Top Empordà`
+    : `${titol} — Guia completa 2026 | Top Empordà`;
 
   return {
-    title: `${titol} — Guia completa 2026 | Top Empordà`,
+    title: metaTitle,
     description: desc,
     openGraph: {
-      title: `${titol} — Guia completa 2026`,
+      title: pobla.meta_title || `${titol} — Guia completa 2026`,
       description: desc,
       url: `https://topemporda.com/pobles/${slug}`,
       siteName: "Top Empordà",
