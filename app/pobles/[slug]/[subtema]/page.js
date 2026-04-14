@@ -6,12 +6,12 @@ import fs from "fs";
 import path from "path";
 
 const SUBTEMES = {
-  "que-fer":      { titol: "Què fer",       desc: "Plans, activitats i experiències" },
-  "restaurants":  { titol: "Restaurants",   desc: "On menjar bé" },
-  "allotjament":  { titol: "Dormir",        desc: "On allotjar-se" },
-  "immobiliaria": { titol: "Comprar casa",  desc: "Mercat immobiliari" },
-  "rutes":        { titol: "Rutes",         desc: "Senderisme i excursions" },
-  "amb-nens":     { titol: "Amb nens",      desc: "Plans familiars" },
+  "que-fer":      { titol: "Què fer",       desc: "Què fer", metaDesc: (poble) => `Empúries, el Camí de Ronda, platges i anxoves: els millors plans i activitats a ${poble}, l'Empordà. Guia pràctica 2026.` },
+  "restaurants":  { titol: "Restaurants",   desc: "On menjar bé", metaDesc: (poble) => `Els millors restaurants de ${poble}: cuina de mercat, arròs de l'Empordà i terrasses amb vistes. Selecció honesta 2026.` },
+  "allotjament":  { titol: "Dormir",        desc: "On allotjar-se", metaDesc: (poble) => `On dormir a ${poble}: hotels, cases rurals i apartaments. Guia pràctica per triar el millor allotjament 2026.` },
+  "immobiliaria": { titol: "Comprar casa",  desc: "Mercat immobiliari", metaDesc: (poble) => `Comprar casa a ${poble}: preus per zona, tipologies i consells per entrar bé al mercat immobiliari de l'Empordà 2026.` },
+  "rutes":        { titol: "Rutes",         desc: "Senderisme i excursions", metaDesc: (poble) => `Les millors rutes de senderisme i excursions des de ${poble}: camins, distàncies i nivell de dificultat. Guia 2026.` },
+  "amb-nens":     { titol: "Amb nens",      desc: "Plans familiars", metaDesc: (poble) => `Plans i activitats a ${poble} amb nens: platges, natura i cultura adaptada a totes les edats. Guia familiar 2026.` },
 };
 
 export async function generateStaticParams() {
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }) {
   if (!pobla || !info) return { title: "Pàgina no trobada | Top Empordà" };
 
   const titol = `${info.titol} a ${pobla.titol}`;
-  const desc = `${info.desc} a ${pobla.titol}, l'Empordà. Guia pràctica i actualitzada 2026 amb recomanacions concretes.`;
+  const desc = info.metaDesc ? info.metaDesc(pobla.titol) : `${info.desc} a ${pobla.titol}, l'Empordà. Guia pràctica i actualitzada 2026.`;
 
   return {
     title: `${titol} — Guia 2026 | Top Empordà`,
