@@ -161,6 +161,14 @@ Per a restaurants concrets, consulta la guia [Restaurants a Figueres](/pobles/fi
 
 ---
 
+## A prop de Figueres: els Aiguamolls de l'Empordà
+
+A 20 minuts de Figueres en cotxe hi ha el Parc Natural dels Aiguamolls de l'Empordà, un dels espais naturals més importants de Catalunya. És el millor lloc de la Península Ibèrica per a l'observació d'aus migratòries: flamencs, cigonyes blanques, limícoles i més de 300 espècies documentades. Si ets a Figueres i tens un matí lliure, els Aiguamolls ofereixen una experiència completament diferent al turisme cultural.
+
+Consulta la [guia completa dels Aiguamolls de l'Empordà](/guies/aiguamolls-emporda-guia-visita) per saber la millor època per anar-hi, quines rutes fer i quines espècies pots veure.
+
+---
+
 ## Immobiliària a Figueres
 
 Figueres és el mercat immobiliari més gran i accessible de l'Alt Empordà. Els preus per metre quadrat estan per sota de les poblacions costaneres, cosa que la converteix en l'opció preferida per a primera residència i per a qui vol viure a l'Empordà sense pagar preus de costa.

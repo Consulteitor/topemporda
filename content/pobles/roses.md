@@ -127,4 +127,12 @@ L'entrada és gratuïta i el recinte s'obre cada dia. Comprova l'horari al web d
 
 ---
 
+## A prop de Roses: els Aiguamolls de l'Empordà
+
+A tan sols 10 minuts de Roses en cotxe hi ha un dels espais naturals més valuosos de Catalunya: el Parc Natural dels Aiguamolls de l'Empordà. És el millor lloc de la Península Ibèrica per a l'observació d'aus migratòries, amb flamencs, cigonyes blanques i més de 300 espècies documentades.
+
+Si ets a Roses i tens un matí lliure, una visita als Aiguamolls és la millor manera de combinar la costa amb la natura. Consulta la [guia completa dels Aiguamolls de l'Empordà](/guies/aiguamolls-emporda-guia-visita) per saber quan anar, quines rutes fer i quines espècies veuràs.
+
+---
+
 *Guia editorial de Top Empordà · Actualitzada el 2026*

@@ -14,7 +14,24 @@ No cal ser ornitòleg per gaudir-ne. Les rutes son planes i accessibles, els obs
 
 ---
 
-## Quan anar als Aiguamolls
+## Quan anar als Aiguamolls: la millor època per visitar el parc
+
+La pregunta clau: **el millor moment és la primavera** (març-maig), però els Aiguamolls valen la visita pràcticament tot l'any. La taula de sota et dona una guia ràpida mes a mes.
+
+| Mes | Aus destacades | Per a ornitologia | Per a families |
+|-----|---------------|:-----------------:|:--------------:|
+| Gener | Flamencs, ànecs hivernants, corbs marins | ★★★ | ★★★ |
+| Febrer | Primeres cigonyes, anàtids | ★★★ | ★★★ |
+| Març | Migració primaveral arrenca, gavians | ★★★★ | ★★★★ |
+| Abril | **Pic de migració**, limícoles, cigonyes | ★★★★★ | ★★★★★ |
+| Maig | Nidificació, espècies estivals, flamecs | ★★★★★ | ★★★★★ |
+| Juny | Nidificació, menys migrants, calor | ★★★ | ★★★ |
+| Juliol | Calor forta, fewer species | ★★ | ★★ |
+| Agost | Migració tardoral comença (limícoles) | ★★★ | ★★★ |
+| Setembre | Limícoles i aus de platja, millor tardor | ★★★★ | ★★★★ |
+| Octubre | Anàtids hivernants arriben, grans concentracions | ★★★★ | ★★★★ |
+| Novembre | Flamencs, ànecs, gavines d'hivern | ★★★ | ★★★ |
+| Desembre | Hivern tranquil, flamencs, llum daurada | ★★★ | ★★★ |
 
 ### Primavera (març-juny): el millor moment
 
