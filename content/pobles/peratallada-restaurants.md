@@ -1,3 +1,25 @@
+## Dónde cenar en Peratallada: guía de restaurantes
+
+Peratallada es uno de los pueblos medievales mejor conservados de Cataluña y, sorprendentemente para su tamaño —menos de 500 habitantes— uno de los mejores lugares del Empordà para cenar bien. El marco medieval atrae a gente dispuesta a comer con calma y gastar bien, y algunos cocineros han aprovechado esa circunstancia para hacer un trabajo honesto y de calidad.
+
+**Qué esperar al cenar en Peratallada:**
+
+La cocina dominante es la **ampurdanesa de mercado**: producto local y de temporada, recetas tradicionales ejecutadas con cuidado. Carnes de la comarca, setas de temporada, pescado del día de las costas cercanas, embutidos artesanos y vinos de la DO Empordà. Sin pretensiones de vanguardia, pero con mucho respeto por el producto.
+
+**Dónde comer en Peratallada:**
+
+- **La plaza del Castillo:** Los restaurantes de la plaza son los más visibles. Algunos son de calidad real; otros viven de la ubicación. Los que cambian el menú por temporada y ofrecen platos del día basados en el mercado son los que trabajan de verdad.
+- **Las calles interiores:** Algunos restaurantes se esconden en los callejones del núcleo medieval. Menos visibles, a menudo mejores.
+- **Las masías del entorno:** Algunos de los mejores restaurantes de la zona están en masías a pocos minutos en coche. Vale la pena el desplazamiento.
+
+**Consejos prácticos:**
+
+- **Reserva siempre en temporada.** De Semana Santa a finales de septiembre, y cualquier fin de semana del año, los restaurantes se llenan. Reserva con al menos un día de antelación.
+- **El menú del día entre semana.** Algunos restaurantes ofrecen menú de mediodía entre semana a precios muy razonables (16–22 €). La mejor opción calidad-precio de Peratallada.
+- **Pide la carta de vinos locales.** Los mejores vinos de la DO Empordà —Espelt, Vinyes dels Aspres, Terra Remota— están presentes en muchas cartas de la comarca.
+
+---
+
 Peratallada és un dels millors pobles per menjar bé de tot el Baix Empordà. Per al seu tamany —menys de 500 habitants— té una concentració de restaurants seriosos que no té explicació lògica fins que ho veus: el marc medieval porta gent disposada a gastar bé, i alguns cuiners han aprofitat aquesta circumstància per fer una feina honesta i de qualitat.
 
 ---

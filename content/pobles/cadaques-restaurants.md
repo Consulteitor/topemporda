@@ -6,6 +6,28 @@ Una advertència honesta: els preus a Cadaqués són dels més alts de la Costa 
 
 ---
 
+## Comer en Cadaqués: guía de restaurantes
+
+Cadaqués es uno de los pueblos más bonitos de la Costa Brava y, si sabes elegir, también uno de los mejores para comer bien. La cocina local gira en torno al pescado del día, las anchoas de l'Escala y los arroces de pescado y marisco. Los precios son de los más altos de la comarca, pero la calidad en los sitios honestos lo justifica.
+
+**Qué comer en Cadaqués:**
+
+- **Pescado a la brasa o plancha:** Pregunta siempre cuál es el pescado fresco del día. Sencillo y difícil de superar.
+- **Anchoas de l'Escala:** Las encontrarás en casi todas las cartas como entrante, solas o con pan con tomate.
+- **Arroz de pescado y marisco:** La versión ampurdanesa del arroz caldoso. Mejor en los restaurantes que lo hacen con pescado fresco de la zona.
+- **Cigalas y langosta:** La zona del Cap de Creus es conocida por sus crustáceos. Precio alto, calidad excepcional cuando es fresco.
+
+**Consejos para comer bien en Cadaqués:**
+
+- **Reserva siempre.** En verano y festivos los mejores restaurantes se llenan días antes.
+- **Evita los menús turísticos** de primera línea. Los que hacen menús de 12 € con paella suelen ser de baja calidad.
+- **Horarios catalanes.** La comida es entre las 13:30 y las 15:30 h. La cena no empieza antes de las 21 h.
+- **Temporada.** Muchos restaurantes cierran de noviembre a marzo. Si viajas fuera de temporada, confirma que están abiertos.
+
+Las terrazas del paseo marítimo son perfectas para tomar un aperitivo o cenar con vistas al puerto. Elige los locales que veas llenos de gente local, no los que están vacíos o hacen reclamo en la puerta.
+
+---
+
 ## La cuina de Cadaqués
 
 La cuina de Cadaqués és cuina de costa: peix del dia, marisc, arrossos i anxoves. Les matèries primeres provenen principalment dels ports de la zona (Cadaqués, Llançà, Port de la Selva, Roses).
