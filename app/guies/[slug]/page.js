@@ -22,7 +22,7 @@ export async function generateMetadata({ params }) {
   const desc = guia.meta_description || `Guia completa sobre ${titol} a l'Empordà. Informació pràctica i actualitzada 2026.`;
 
   return {
-    title: `${titol} | Top Empordà`,
+    title: titol,
     description: desc,
     openGraph: {
       title: titol,
@@ -57,6 +57,54 @@ const C = {
 };
 
 
+function extractRestaurantList(markdown, slug, titol) {
+  if (!markdown || !slug.includes("restaurants")) return null;
+  const blocks = markdown.split(/^## \d+\./m).slice(1); // skip intro
+  if (blocks.length === 0) return null;
+
+  const items = blocks.map((block, i) => {
+    const nameMatch = block.match(/^([^\n]+)/);
+    const name = nameMatch ? nameMatch[1].trim() : null;
+    if (!name) return null;
+
+    const ratingMatch = block.match(/★\s*([\d,]+)\s*·\s*([\d.,]+)\s*ressen/);
+    const ratingValue = ratingMatch ? ratingMatch[1].replace(",", ".") : null;
+    const reviewCount = ratingMatch ? parseInt(ratingMatch[2].replace(/\./g, "")) : null;
+
+    const cityMatch = block.match(/→\s*([^·\n]+)/);
+    const city = cityMatch ? cityMatch[1].trim() : null;
+
+    return {
+      "@type": "ListItem",
+      "position": i + 1,
+      "item": {
+        "@type": "Restaurant",
+        "name": name,
+        ...(city ? { "address": { "@type": "PostalAddress", "addressLocality": city, "addressCountry": "ES" } } : {}),
+        ...(ratingValue && reviewCount ? {
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": ratingValue,
+            "reviewCount": reviewCount,
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        } : {}),
+      }
+    };
+  }).filter(Boolean);
+
+  if (items.length === 0) return null;
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": titol,
+    "url": `https://topemporda.com/guies/${slug}`,
+    "numberOfItems": items.length,
+    "itemListElement": items,
+  };
+}
+
 function extractFAQs(markdown) {
   if (!markdown) return [];
   const faqSection = markdown.split(/^## Preguntes freqüents/mi)[1];
@@ -82,6 +130,8 @@ export default async function GuiaPage({ params }) {
 
   const contingut = getContingut(slug);
 
+  const itemListSchema = extractRestaurantList(contingut, slug, guia.titol);
+
   const faqs = extractFAQs(contingut);
   const faqSchema = faqs.length > 0 ? {
     "@context": "https://schema.org",
@@ -98,6 +148,12 @@ export default async function GuiaPage({ params }) {
 
   return (
     <div style={{ background: C.white, minHeight: "100vh", fontFamily: "'Source Serif 4', Georgia, serif" }}>
+      {itemListSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
+      )}
       {faqSchema && (
         <script
           type="application/ld+json"
