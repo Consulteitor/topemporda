@@ -8,10 +8,39 @@ export const metadata = {
   description: 'Directori de negocis locals, restaurants, allotjaments i activitats a l\'Empordà. Alt Empordà i Baix Empordà.',
 }
 
+const SITE_SCHEMAS = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Top Empordà",
+    "url": "https://topemporda.com",
+    "logo": "https://topemporda.com/favicon.svg",
+    "description": "Directori i guia de viatge per a la comarca de l'Empordà (Costa Brava, Catalunya).",
+    "areaServed": { "@type": "Place", "name": "Empordà, Catalunya, Espanya" }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Top Empordà",
+    "url": "https://topemporda.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://topemporda.com/directori?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+]
+
 export default function RootLayout({ children }) {
   return (
     <html lang="ca">
       <body>
+        {SITE_SCHEMAS.map((schema, i) => (
+          <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        ))}
         <Navbar />
         <main
           style={{ maxWidth: '1400px', margin: '0 auto', padding: '0 40px' }}

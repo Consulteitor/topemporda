@@ -57,6 +57,48 @@ const C = {
 };
 
 
+const STATIC_SCHEMAS = {
+  "aiguamolls-emporda-guia-visita": {
+    "@context": "https://schema.org",
+    "@type": "TouristAttraction",
+    "name": "Parc Natural dels Aiguamolls de l'Empordà",
+    "url": "https://topemporda.com/guies/aiguamolls-emporda-guia-visita",
+    "description": "Reserva natural a l'Alt Empordà, un dels espais naturals més importants de Catalunya per a l'observació d'aus migratòries. Flamencs, garses i més de 300 espècies.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Castelló d'Empúries", "addressRegion": "Girona", "addressCountry": "ES" },
+    "geo": { "@type": "GeoCoordinates", "latitude": 42.217, "longitude": 3.083 },
+    "touristType": ["Natura", "Ornitologia", "Família", "Fotografia"],
+    "isAccessibleForFree": true,
+  },
+  "cap-de-creus-que-fer-visitar": {
+    "@context": "https://schema.org",
+    "@type": "TouristAttraction",
+    "name": "Cap de Creus",
+    "url": "https://topemporda.com/guies/cap-de-creus-que-fer-visitar",
+    "description": "El punt més oriental de la península Ibèrica i parc natural marítimo-terrestre. Far, cales verges, reserva marina i el Camí de Ronda des de Cadaqués.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Roses", "addressRegion": "Girona", "addressCountry": "ES" },
+    "geo": { "@type": "GeoCoordinates", "latitude": 42.319, "longitude": 3.319 },
+    "touristType": ["Natura", "Senderisme", "Fotografia", "Busseig"],
+    "isAccessibleForFree": true,
+  },
+  "cami-de-ronda-emporda-guia-completa": {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "Camí de Ronda de l'Empordà",
+    "url": "https://topemporda.com/guies/cami-de-ronda-emporda-guia-completa",
+    "description": "Sender litoral que recorre la Costa Brava de l'Empordà: des del Cap de Creus fins a Begur, passant per Cadaqués, Roses i l'Escala. Trams de dificultat variada.",
+    "touristType": ["Senderisme", "Natura", "Costa Brava"],
+    "itinerary": {
+      "@type": "ItemList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Cap de Creus — Cadaqués" },
+        { "@type": "ListItem", "position": 2, "name": "Cadaqués — Port de la Selva" },
+        { "@type": "ListItem", "position": 3, "name": "Roses — L'Escala" },
+        { "@type": "ListItem", "position": 4, "name": "L'Escala — Begur" },
+      ]
+    }
+  },
+};
+
 function extractRestaurantList(markdown, slug, titol) {
   if (!markdown || !slug.includes("restaurants")) return null;
   const blocks = markdown.split(/^## \d+\./m).slice(1); // skip intro
@@ -131,6 +173,7 @@ export default async function GuiaPage({ params }) {
   const contingut = getContingut(slug);
 
   const itemListSchema = extractRestaurantList(contingut, slug, guia.titol);
+  const staticSchema = STATIC_SCHEMAS[slug] || null;
 
   const faqs = extractFAQs(contingut);
   const faqSchema = faqs.length > 0 ? {
@@ -148,6 +191,12 @@ export default async function GuiaPage({ params }) {
 
   return (
     <div style={{ background: C.white, minHeight: "100vh", fontFamily: "'Source Serif 4', Georgia, serif" }}>
+      {staticSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(staticSchema) }}
+        />
+      )}
       {itemListSchema && (
         <script
           type="application/ld+json"

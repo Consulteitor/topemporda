@@ -63,6 +63,24 @@ function getContingut(slug, subtema) {
   }
 }
 
+function extractFAQs(markdown) {
+  if (!markdown) return [];
+  const faqSection = markdown.split(/^## Preguntes freqüents/mi)[1];
+  if (!faqSection) return [];
+  const nextSection = faqSection.split(/^## /m)[0];
+  const questionBlocks = nextSection.split(/^\*\*/m).filter(b => b.trim());
+  const faqs = [];
+  for (const block of questionBlocks) {
+    const match = block.match(/^([^*]+)\*\*\s*\n([\s\S]+?)(?=\n\n|$)/);
+    if (match) {
+      const question = match[1].trim();
+      const answer = match[2].trim().replace(/\*\*/g, "").replace(/\[([^\]]+)\]\([^)]+\)/g, "$1");
+      if (question && answer) faqs.push({ question, answer });
+    }
+  }
+  return faqs.slice(0, 10);
+}
+
 const C = {
   black: "#0a0a0a",
   white: "#faf9f6",
@@ -89,8 +107,22 @@ export default async function SubtemaPage({ params }) {
 
   const contingut = getContingut(slug, subtema);
 
+  const faqs = extractFAQs(contingut);
+  const faqSchema = faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(f => ({
+      "@type": "Question",
+      "name": f.question,
+      "acceptedAnswer": { "@type": "Answer", "text": f.answer }
+    }))
+  } : null;
+
   return (
     <div style={{ background: C.white, minHeight: "100vh", fontFamily: "'Source Serif 4', Georgia, serif" }}>
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      )}
 
       {/* HERO */}
       <div style={{ background: C.black, color: C.white, padding: "40px 40px 48px" }}>
