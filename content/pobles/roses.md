@@ -127,6 +127,12 @@ L'entrada és gratuïta i el recinte s'obre cada dia. Comprova l'horari al web d
 
 ---
 
+## Platges i cales del voltant de Roses
+
+Roses és el punt de partida natural per explorar el litoral nord de l'Empordà. Per una guia completa de totes les opcions —des de les platges familiars de la badia fins a les cales rocoses del Cap de Creus i les cales de Begur cap al sud— consulta la [guia de platges i cales de l'Empordà](/guies/platges-cales-costa-brava-emporda).
+
+---
+
 ## A prop de Roses: els Aiguamolls de l'Empordà
 
 A tan sols 10 minuts de Roses en cotxe hi ha un dels espais naturals més valuosos de Catalunya: el Parc Natural dels Aiguamolls de l'Empordà. És el millor lloc de la Península Ibèrica per a l'observació d'aus migratòries, amb flamencs, cigonyes blanques i més de 300 espècies documentades.

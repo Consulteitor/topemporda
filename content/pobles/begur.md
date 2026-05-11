@@ -117,3 +117,5 @@ La Fira d'Indians se celebra cada any als primers dies de setembre.
 Begur és una bona base per explorar el Baix Empordà central. En menys de 30 minuts arribes a Palafrugell, Llafranc, Calella de Palafrugell i Tamariu cap al sud, i a Pals i Peratallada cap a l'interior.
 
 Per a plans concrets a la comarca, consulta la [guia de què fer a l'Empordà](/guies/que-fer-a-lemporda-guia-practica-2026).
+
+Per escollir on banyar-te, consulta la [guia de platges i cales de l'Empordà](/guies/platges-cales-costa-brava-emporda) — inclou totes les cales de Begur i les millors opcions del litoral.

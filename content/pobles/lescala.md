@@ -130,5 +130,6 @@ L'Escala és un punt excel·lent per explorar el golf de Roses i els voltants:
 - **Roses:** A 20 minuts. Les platges de la badia i la ciutadella.
 - **Figueres:** A 30 minuts. El Teatre-Museu Dalí i el Castell de Sant Ferran.
 - **L'Estartit i les Illes Medes:** A 20 minuts cap al sud. La millor reserva marina de la Costa Brava.
+- **Platges i cales de la zona:** Consulta la [guia completa de platges i cales de l'Empordà](/guies/platges-cales-costa-brava-emporda) per triar la millor opció cada dia.
 
 Per a una visió de conjunt, consulta la [guia de què fer a l'Empordà](/guies/que-fer-a-lemporda-guia-practica-2026).
