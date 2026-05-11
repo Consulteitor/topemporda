@@ -32,32 +32,6 @@ async function getGuiesImmobiliaria() {
   }
 }
 
-const AGENCIES_DESTACADES = {
-  principal: {
-    nom: 'Empordà Finques',
-    descripcio: "Especialistes en compravenda i lloguer a l'Empordà. Amb presència a Figueres, Cadaqués i Begur, assessoren tant compradors de primera residència com inversors en propietats de costa.",
-    web: 'https://topemporda.com',
-    telefon: '972 XX XX XX',
-    poblacions: ['Figueres', 'Cadaqués', 'Begur', 'Roses'],
-    badge: 'Agència de referència',
-  },
-  secundaries: [
-    {
-      nom: 'Costa Brava Immobiliària',
-      descripcio: "Experts en propietats de luxe i segones residències a la Costa Brava central: Begur, Palafrugell, Tamariu i Llafranc.",
-      web: 'https://topemporda.com',
-      telefon: '972 XX XX XX',
-      badge: 'Propietats de costa',
-    },
-    {
-      nom: 'Alt Empordà Cases',
-      descripcio: "Especialistes en el mercat del nord de l'Empordà: Figueres, Roses, Empuriabrava i Cap de Creus. Més de 20 anys al sector.",
-      web: 'https://topemporda.com',
-      telefon: '972 XX XX XX',
-      badge: 'Alt Empordà',
-    },
-  ],
-};
 
 const PROPIETATS_DESTACADES = [
   {
@@ -179,50 +153,24 @@ export default async function InmobiliariaPage() {
 
       <div style={{ maxWidth: '900px', margin: '0 auto', padding: '0 24px' }}>
 
-        {/* ── AGÈNCIES */}
+        {/* ── CTA AGÈNCIES */}
         <section style={{ padding: '60px 0 40px' }}>
-          <div style={{ marginBottom: '32px' }}>
-            <p style={{ fontFamily: "'IBM Plex Sans', sans-serif", fontSize: '10px', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#1a5c8a', marginBottom: '8px' }}>Professionals de confiança</p>
-            <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '28px', fontWeight: 700, margin: '0' }}>Agències immobiliàries a l'Empordà</h2>
-          </div>
-
-          <a href={AGENCIES_DESTACADES.principal.web} target="_blank" rel="noopener" style={{
-            display: 'block', textDecoration: 'none', color: 'inherit',
-            border: '2px solid #0a0a0a', padding: '28px 32px', marginBottom: '16px', background: '#faf9f6',
-          }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '12px' }}>
-              <div style={{ flex: 1, minWidth: '200px' }}>
-                <span style={{ fontFamily: "'IBM Plex Sans', sans-serif", fontSize: '9px', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1a5c8a', display: 'block', marginBottom: '8px' }}>⭐ {AGENCIES_DESTACADES.principal.badge}</span>
-                <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '22px', fontWeight: 700, margin: '0 0 10px' }}>{AGENCIES_DESTACADES.principal.nom}</h3>
-                <p style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '15px', lineHeight: 1.5, color: '#444', margin: '0 0 12px' }}>{AGENCIES_DESTACADES.principal.descripcio}</p>
-                <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                  {AGENCIES_DESTACADES.principal.poblacions.map(p => (
-                    <span key={p} style={{ fontFamily: "'IBM Plex Sans', sans-serif", fontSize: '10px', padding: '3px 10px', border: '1px solid #e8e4dc', color: '#666' }}>{p}</span>
-                  ))}
-                </div>
-              </div>
-              <div style={{ textAlign: 'right' }}>
-                <div style={{ fontFamily: "'IBM Plex Sans', sans-serif", fontSize: '14px', fontWeight: 500, color: '#0a0a0a' }}>{AGENCIES_DESTACADES.principal.telefon}</div>
-                <div style={{ marginTop: '12px', background: '#0a0a0a', color: '#faf9f6', padding: '8px 20px', fontSize: '11px', fontFamily: "'IBM Plex Sans', sans-serif", letterSpacing: '0.08em' }}>Visitar →</div>
-              </div>
+          <div style={{ border: '2px solid #0a0a0a', padding: '40px 40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '24px' }}>
+            <div style={{ maxWidth: '520px' }}>
+              <p style={{ fontFamily: "'IBM Plex Sans', sans-serif", fontSize: '10px', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#1a5c8a', marginBottom: '10px' }}>Agències immobiliàries</p>
+              <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '26px', fontWeight: 700, margin: '0 0 12px' }}>Ets una agència a l'Empordà?</h2>
+              <p style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '16px', lineHeight: 1.6, color: '#444', margin: '0' }}>
+                Top Empordà és el directori de referència de la comarca. Si tens una agència immobiliària a l'Alt o Baix Empordà i vols aparèixer aquí com a professional de confiança, posa't en contacte amb nosaltres.
+              </p>
             </div>
-          </a>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
-            {AGENCIES_DESTACADES.secundaries.map((ag, i) => (
-              <a key={i} href={ag.web} target="_blank" rel="noopener" style={{
-                display: 'block', textDecoration: 'none', color: 'inherit',
-                border: '1px solid #e8e4dc', padding: '20px 24px', background: '#faf9f6',
-              }}>
-                <span style={{ fontFamily: "'IBM Plex Sans', sans-serif", fontSize: '9px', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1a5c8a', display: 'block', marginBottom: '6px' }}>{ag.badge}</span>
-                <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '17px', fontWeight: 700, margin: '0 0 8px' }}>{ag.nom}</h3>
-                <p style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '13px', lineHeight: 1.5, color: '#555', margin: '0 0 12px' }}>{ag.descripcio}</p>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <span style={{ fontFamily: "'IBM Plex Sans', sans-serif", fontSize: '12px', color: '#888' }}>{ag.telefon}</span>
-                  <span style={{ fontFamily: "'IBM Plex Sans', sans-serif", fontSize: '11px', color: '#1a5c8a', fontWeight: 500 }}>Visitar →</span>
-                </div>
-              </a>
-            ))}
+            <a href="mailto:info@topemporda.com" style={{
+              background: '#0a0a0a', color: '#faf9f6',
+              padding: '14px 32px', textDecoration: 'none', whiteSpace: 'nowrap',
+              fontFamily: "'IBM Plex Sans', sans-serif", fontSize: '12px', fontWeight: 500,
+              letterSpacing: '0.1em', textTransform: 'uppercase', flexShrink: 0,
+            }}>
+              Contactar →
+            </a>
           </div>
         </section>
 
