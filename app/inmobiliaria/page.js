@@ -90,12 +90,12 @@ const PROPIETATS_DESTACADES = [
 ];
 
 const MUNICIPIS = [
-  { nom: 'Begur',          descripcio: 'Costa Brava exclusiva · Cales úniques · Des de 4.000 €/m²',   slug: 'comprar-casa-emporda' },
-  { nom: 'Cadaqués',       descripcio: 'Mercat limitat · Molt demandat · Des de 5.000 €/m²',           slug: 'comprar-casa-emporda' },
-  { nom: 'Figueres',       descripcio: 'Capital comarcal · Tots els serveis · Des de 1.400 €/m²',      slug: 'comprar-casa-emporda' },
-  { nom: 'Roses',          descripcio: 'Badia protegida · Inversió turística · Des de 2.000 €/m²',     slug: 'comprar-casa-emporda' },
-  { nom: 'Empuriabrava',   descripcio: 'Marina residencial · Canals navegables · Des de 2.500 €/m²',   slug: 'comprar-casa-emporda' },
-  { nom: 'Peratallada',    descripcio: 'Mercat exclusiu · Masies medievals · Mercat molt limitat',      slug: 'comprar-casa-emporda' },
+  { nom: 'Begur',          descripcio: 'Costa Brava exclusiva · Cales úniques · Des de 4.000 €/m²',   href: '/pobles/begur/immobiliaria' },
+  { nom: 'Cadaqués',       descripcio: 'Mercat limitat · Molt demandat · Des de 5.000 €/m²',           href: '/pobles/cadaques/immobiliaria' },
+  { nom: 'Figueres',       descripcio: 'Capital comarcal · Tots els serveis · Des de 1.400 €/m²',      href: '/pobles/figueres/immobiliaria' },
+  { nom: 'Roses',          descripcio: 'Badia protegida · Inversió turística · Des de 2.000 €/m²',     href: '/pobles/roses/immobiliaria' },
+  { nom: "L'Escala",       descripcio: 'Golf de Roses · Primera residència · Des de 2.000 €/m²',       href: '/pobles/lescala/immobiliaria' },
+  { nom: 'Peratallada',    descripcio: 'Mercat exclusiu · Masies medievals · Mercat molt limitat',      href: '/pobles/peratallada/immobiliaria' },
 ];
 
 export default async function InmobiliariaPage() {
@@ -137,19 +137,19 @@ export default async function InmobiliariaPage() {
             a Roses o Cadaqués. Guies completes per comprar, llogar o invertir.
           </p>
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-            <a href="/guies" style={{
+            <a href="/guies/comprar-casa-emporda-guia-mercat" style={{
               background: '#1a5c8a', color: '#faf9f6',
               padding: '12px 24px', textDecoration: 'none',
               fontFamily: "'IBM Plex Sans', sans-serif", fontSize: '13px', fontWeight: 500,
               letterSpacing: '0.08em',
-            }}>Comprar casa →</a>
-            <a href="/guies" style={{
+            }}>Guia per comprar casa →</a>
+            <a href="#municipis" style={{
               background: 'transparent', color: '#faf9f6',
               border: '1px solid #faf9f640',
               padding: '12px 24px', textDecoration: 'none',
               fontFamily: "'IBM Plex Sans', sans-serif", fontSize: '13px', fontWeight: 500,
               letterSpacing: '0.08em',
-            }}>Llogar per temporada →</a>
+            }}>Preus per municipi →</a>
           </div>
         </div>
       </section>
@@ -294,13 +294,13 @@ export default async function InmobiliariaPage() {
 
         {/* ── MUNICIPIS */}
         <section style={{ borderTop: '1px solid #e8e4dc', padding: '48px 0' }}>
-          <div style={{ marginBottom: '28px' }}>
+          <div id="municipis" style={{ marginBottom: '28px' }}>
             <p style={{ fontFamily: "'IBM Plex Sans', sans-serif", fontSize: '10px', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#1a5c8a', marginBottom: '8px' }}>On comprar</p>
             <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '28px', fontWeight: 700, margin: '0' }}>Preus per municipi</h2>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1px', background: '#e8e4dc' }}>
             {MUNICIPIS.map((m, i) => (
-              <a key={i} href={`/guies/${m.slug}`} style={{ display: 'block', textDecoration: 'none', color: 'inherit', background: '#faf9f6', padding: '18px 20px' }}>
+              <a key={i} href={m.href} style={{ display: 'block', textDecoration: 'none', color: 'inherit', background: '#faf9f6', padding: '18px 20px' }}>
                 <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '16px', fontWeight: 700, margin: '0 0 6px' }}>{m.nom}</h3>
                 <p style={{ fontFamily: "'IBM Plex Sans', sans-serif", fontSize: '11px', color: '#888', margin: '0', lineHeight: 1.4 }}>{m.descripcio}</p>
               </a>
