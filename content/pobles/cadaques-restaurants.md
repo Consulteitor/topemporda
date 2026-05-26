@@ -26,6 +26,31 @@ Cadaqués es uno de los pueblos más bonitos de la Costa Brava y, si sabes elegi
 
 Las terrazas del paseo marítimo son perfectas para tomar un aperitivo o cenar con vistas al puerto. Elige los locales que veas llenos de gente local, no los que están vacíos o hacen reclamo en la puerta.
 
+### Los mejores restaurantes de Cadaqués según Google Maps
+
+Esta selección está ordenada por nota media y número de reseñas en Google Maps — el filtro más fiable para separar los restaurantes que de verdad funcionan de los que viven de la ubicación.
+
+**1. Cadaq's — ★ 4,8 · 1.051 reseñas** *(el más popular de Cadaqués)*
+Más de mil reseñas a un 4,8 es el resultado más sólido del pueblo. Cocina original, creps memorables y un servicio que supera las expectativas para un destino turístico de este nivel. Reserva con tiempo en temporada alta.
+
+**2. Compartir — ★ 4,6 · 2.839 reseñas** *(referencia gastronómica)*
+El restaurante más conocido de Cadaqués, fundado por tres ex-alumnos de El Bulli (Xatruch, Castro y Casañas). Cocina de alta técnica basada en platos para compartir. Casi 3.000 reseñas a un 4,6 es un resultado que pocas direcciones de Catalunya pueden igualar. Reserva con semanas de antelación en verano.
+
+**3. Talla Restaurant — ★ 4,6 · 1.937 reseñas**
+Vistas al pueblo y al mar desde la terraza, cocina elaborada con producto de calidad. Uno de los pilares de la restauración local. Muy recomendable para una cena con entorno especial.
+
+**4. Orsapop Cadaqués — ★ 4,8 · 435 reseñas**
+Local pequeño y acogedor, cocina bien elaborada. La pluma ibérica y el arroz negro aparecen repetidamente entre los favoritos. Una de las mejores apuestas si quieres cocina con intención sin el precio de un restaurante de alta gama.
+
+**5. Hotel Sol Ixent — ★ 4,7 · 1.014 reseñas**
+Restaurante de hotel con vistas directas al mar y cocina mediterránea consistente. Para quien quiere comer o cenar en Cadaqués con vistas garantizadas y calidad fiable, es una de las opciones más seguras del pueblo.
+
+**6. Restaurant Vincle Cadaqués — ★ 4,7 · 222 reseñas**
+Cocina del Empordà con producto local como protagonista. El arroz de mar y montaña y los pescados frescos son los platos de referencia. Para quien quiere comer el Empordà en un plato.
+
+**7. El Gato Azul — ★ 4,7 · 585 reseñas**
+Pequeño restaurante fuera del circuito turístico habitual que fusiona cocina mediterránea con toques libaneses. Los postres caseros aparecen de manera recurrente como punto fuerte. Buena sorpresa si quieres algo diferente al circuito del puerto.
+
 ---
 
 ## La cuina de Cadaqués
