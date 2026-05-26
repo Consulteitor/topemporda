@@ -6,7 +6,7 @@ import fs from "fs";
 import path from "path";
 
 const SUBTEMES = {
-  "que-fer":      { titol: "Què fer",       desc: "Què fer", metaDesc: (poble) => `Empúries, el Camí de Ronda, platges i anxoves: els millors plans i activitats a ${poble}, l'Empordà. Guia pràctica 2026.` },
+  "que-fer":      { titol: "Què fer",       desc: "Què fer", metaDesc: (poble) => `Què fer a ${poble}: els millors plans, rutes, cales i activitats per treure el màxim de la visita. Guia pràctica 2026.` },
   "restaurants":  { titol: "Restaurants",   desc: "On menjar bé", metaDesc: (poble) => `Els millors restaurants de ${poble}: cuina de mercat, arròs de l'Empordà i terrasses amb vistes. Selecció honesta 2026.` },
   "allotjament":  { titol: "Dormir",        desc: "On allotjar-se", metaDesc: (poble) => `On dormir a ${poble}: hotels, cases rurals i apartaments. Guia pràctica per triar el millor allotjament 2026.` },
   "immobiliaria": { titol: "Comprar casa",  desc: "Mercat immobiliari", metaDesc: (poble) => `Comprar casa a ${poble}: preus per zona, tipologies i consells per entrar bé al mercat immobiliari de l'Empordà 2026.` },
