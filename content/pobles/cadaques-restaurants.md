@@ -6,7 +6,7 @@ Una advertència honesta: els preus a Cadaqués són dels més alts de la Costa 
 
 ---
 
-## Comer en Cadaqués: guía de restaurantes
+## Dónde comer en Cadaqués: guía de restaurantes
 
 Cadaqués es uno de los pueblos más bonitos de la Costa Brava y, si sabes elegir, también uno de los mejores para comer bien. La cocina local gira en torno al pescado del día, las anchoas de l'Escala y los arroces de pescado y marisco. Los precios son de los más altos de la comarca, pero la calidad en los sitios honestos lo justifica.
 
