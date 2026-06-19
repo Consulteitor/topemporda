@@ -256,6 +256,33 @@ export default async function InmobiliariaPage() {
           </div>
         </section>
 
+        {/* ── BLOC CASTELLÀ (SEO: "inmobiliaria empordà") */}
+        <section style={{ borderTop: '1px solid #e8e4dc', padding: '48px 0' }}>
+          <div style={{ marginBottom: '24px' }}>
+            <p style={{ fontFamily: "'IBM Plex Sans', sans-serif", fontSize: '10px', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#1a5c8a', marginBottom: '8px' }}>En español</p>
+            <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '28px', fontWeight: 700, margin: '0' }}>Inmobiliaria en el Empordà: comprar, alquilar e invertir</h2>
+          </div>
+          <div style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '16px', lineHeight: 1.7, color: '#3a3733' }}>
+            <p style={{ margin: '0 0 16px' }}>
+              El Empordà reúne algunos de los mercados inmobiliarios más activos de Cataluña. Dos comarcas muy distintas: el <strong>Alt Empordà</strong>, con Figueres como capital de servicios y la Costa Brava norte (Roses, Cadaqués, l'Escala); y el <strong>Baix Empordà</strong>, con los pueblos medievales del interior (Peratallada, La Bisbal) y las calas de Begur, Pals o Palafrugell. Comprar aquí va desde un apartamento en primera línea de mar hasta una masía del siglo XVIII por restaurar.
+            </p>
+            <p style={{ margin: '0 0 16px' }}>
+              Los precios varían muchísimo según la zona: rondan los <strong>5.000 €/m²</strong> en Cadaqués y Begur, los 2.000 €/m² en Roses o l'Escala y bajan a partir de <strong>1.400 €/m²</strong> en Figueres y el interior. Cerca del 60% de las operaciones son <strong>segundas residencias</strong>, lo que marca el ritmo del mercado: mucha demanda en verano y un peso importante de la compra como inversión turística.
+            </p>
+            <p style={{ margin: '0 0 16px' }}>
+              <strong>Antes de comprar en el Empordà, ten en cuenta:</strong>
+            </p>
+            <ul style={{ margin: '0 0 16px', paddingLeft: '20px' }}>
+              <li style={{ marginBottom: '8px' }}><strong>Licencia turística:</strong> si buscas alquilar a turistas, comprueba que la vivienda la tenga en vigor. En muchos municipios costeros ya no se conceden nuevas.</li>
+              <li style={{ marginBottom: '8px' }}><strong>Impuestos:</strong> el ITP en Cataluña para vivienda de segunda mano va del 10% al 11% según el precio. Súmalo al presupuesto.</li>
+              <li style={{ marginBottom: '8px' }}><strong>Estacionalidad:</strong> los mejores precios de alquiler de temporada se cierran en invierno; las ventas se aceleran de primavera a verano.</li>
+            </ul>
+            <p style={{ margin: '0' }}>
+              Encontrarás el detalle de cada zona en las páginas de precios por municipio de <a href="/pobles/begur/immobiliaria" style={{ color: '#1a5c8a' }}>Begur</a>, <a href="/pobles/cadaques/immobiliaria" style={{ color: '#1a5c8a' }}>Cadaqués</a>, <a href="/pobles/roses/immobiliaria" style={{ color: '#1a5c8a' }}>Roses</a> y <a href="/pobles/figueres/immobiliaria" style={{ color: '#1a5c8a' }}>Figueres</a>, y en nuestras guías prácticas para comprar, alquilar e invertir en la comarca.
+            </p>
+          </div>
+        </section>
+
         {/* ── CTA FINAL */}
         <section style={{ borderTop: '1px solid #e8e4dc', padding: '48px 0 64px', textAlign: 'center' }}>
           <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '28px', fontWeight: 700, marginBottom: '12px' }}>Tens una propietat o una agència?</h2>
