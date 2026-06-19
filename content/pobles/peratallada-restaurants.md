@@ -1,4 +1,4 @@
-## Dónde cenar en Peratallada: guía de restaurantes
+## Dónde comer en Peratallada: guía de restaurantes
 
 Peratallada es uno de los pueblos medievales mejor conservados de Cataluña y, sorprendentemente para su tamaño —menos de 500 habitantes— uno de los mejores lugares del Empordà para cenar bien. El marco medieval atrae a gente dispuesta a comer con calma y gastar bien, y algunos cocineros han aprovechado esa circunstancia para hacer un trabajo honesto y de calidad.
 

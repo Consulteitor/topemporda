@@ -13,9 +13,46 @@ export async function generateMetadata({ params }) {
   const { slug } = await params
   const negoci = await getNegociBySlug(slug)
   if (!negoci) return {}
+  const title = `${negoci.nom} — ${negoci.poble} | Top Empordà`
+  const url = `/negocis/${slug}`
   return {
-    title: `${negoci.nom} — ${negoci.poble} | Top Empordà`,
+    title,
     description: negoci.descripcio,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description: negoci.descripcio,
+      url,
+      type: 'website',
+      ...(negoci.imatge ? { images: [{ url: negoci.imatge, alt: negoci.nom }] } : {}),
+    },
+  }
+}
+
+// Schema LocalBusiness + AggregateRating → habilita rich results per a fitxes de negoci
+function buildNegociSchema(n) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: n.nom,
+    description: n.descripcio,
+    telephone: n.telefon || undefined,
+    url: n.web ? `https://${n.web}` : undefined,
+    image: n.imatge || undefined,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: n.adreca || undefined,
+      addressLocality: n.poble,
+      addressRegion: 'Catalunya',
+      addressCountry: 'ES',
+    },
+    aggregateRating: n.valoracio && n.ressenyes ? {
+      '@type': 'AggregateRating',
+      ratingValue: String(n.valoracio).replace(',', '.'),
+      reviewCount: String(n.ressenyes),
+      bestRating: '5',
+      worstRating: '1',
+    } : undefined,
   }
 }
 
@@ -26,6 +63,10 @@ export default async function FitxaNegoci({ params }) {
 
   return (
     <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '48px 0' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(buildNegociSchema(n)) }}
+      />
       <div style={{ fontFamily: "'IBM Plex Sans', Helvetica, sans-serif", fontSize: '11px', color: '#9a9489', letterSpacing: '0.08em', marginBottom: '32px', display: 'flex', gap: '8px', alignItems: 'center' }}>
         <Link href="/" style={{ color: '#9a9489' }}>Inici</Link>
         <span>·</span>
