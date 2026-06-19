@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://topcerdanya.com/sitemap.xml
+# Pàgines internes sense valor de cerca
+Disallow: /admin
+
+Sitemap: https://topemporda.com/sitemap.xml
