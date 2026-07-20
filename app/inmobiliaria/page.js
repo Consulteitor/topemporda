@@ -18,7 +18,7 @@ const SHEETS_URL = "https://script.google.com/macros/s/AKfycbwiKLh4vUWXIotw9sI2o
 
 async function getGuiesImmobiliaria() {
   try {
-    const res = await fetch(`${SHEETS_URL}?sheet=Guies`, { next: { revalidate: 3600 } });
+    const res = await fetch(`${SHEETS_URL}?sheet=Guies`, { next: { revalidate: 172800 } });
     const json = await res.json();
     const data = Array.isArray(json) ? json : (json.data || []);
     return data.filter(g => g.slug && g.titol && (

@@ -19,7 +19,7 @@ const CATS_COLOR = {
 
 async function getAgenda() {
   try {
-    const res = await fetch(`${SHEETS_URL}?sheet=Agenda`, { next: { revalidate: 3600 } });
+    const res = await fetch(`${SHEETS_URL}?sheet=Agenda`, { next: { revalidate: 172800 } });
     const data = await res.json();
     if (data.error) return [];
     return Array.isArray(data) ? data : (data.data || []);

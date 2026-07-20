@@ -20,7 +20,7 @@ function getMdFiles(dir) {
 // → Google detecta canvis reals i augmenta la freqüència de crawl
 async function getGuiesLastModified() {
   try {
-    const res = await fetch(`${SHEETS_API}?sheet=Guies`, { next: { revalidate: 3600 } });
+    const res = await fetch(`${SHEETS_API}?sheet=Guies`, { next: { revalidate: 172800 } });
     const json = await res.json();
     const rows = Array.isArray(json) ? json : (json.data || []);
     const map = new Map();
@@ -42,7 +42,7 @@ async function getGuiesLastModified() {
 // Negocis publicats (exclou esborranys) → /negocis/[id]
 async function getNegocisPublicats() {
   try {
-    const res = await fetch(`${SHEETS_API}?sheet=Negocis`, { next: { revalidate: 86400 } });
+    const res = await fetch(`${SHEETS_API}?sheet=Negocis`, { next: { revalidate: 172800 } });
     const json = await res.json();
     const rows = Array.isArray(json) ? json : (json.data || []);
     return rows.filter(n => n.id && n.estat !== "esborrany");

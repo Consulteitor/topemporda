@@ -12,7 +12,7 @@ const C = {
 
 async function getBadge(slug) {
   try {
-    const res = await fetch(`${SHEETS_API}?sheet=Badges`, { next: { revalidate: 3600 } })
+    const res = await fetch(`${SHEETS_API}?sheet=Badges`, { next: { revalidate: 172800 } })
     const data = await res.json()
     return data.find(b => (b.slug || '').toLowerCase() === slug.toLowerCase()) || null
   } catch {
