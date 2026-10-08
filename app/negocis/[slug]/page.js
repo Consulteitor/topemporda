@@ -1,12 +1,13 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { getNegociBySlug, getNegocis } from '@/lib/sheets'
+import { getNegociBySlug } from '@/lib/sheets'
 
 export const dynamic = 'force-static'
+export const revalidate = 604800
 
 export async function generateStaticParams() {
-  const negocis = await getNegocis()
-  return negocis.map(n => ({ slug: n.id }))
+  // Genera i cacheja cada fitxa quan es visita, sense preparar tot el directori.
+  return []
 }
 
 export async function generateMetadata({ params }) {
